@@ -1,1 +1,4192 @@
-[]
+[
+    {
+        "id": "dfb95ed1ca05b9e7",
+        "type": "tab",
+        "label": "[Stellio] Maintenance",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e239f32639a28b7a",
+        "type": "tab",
+        "label": "[Stellio] Konrad Stationen",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "130060434246f931",
+        "type": "tab",
+        "label": "[Stellio] Zeus Roller",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "279efa75137f8875",
+        "type": "tab",
+        "label": "[Stellio] GBFS",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "50940b605fe0d135",
+        "type": "tab",
+        "label": "[Stellio] Ladesäulen",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "67bf633c0fe1bc4a",
+        "type": "group",
+        "z": "e239f32639a28b7a",
+        "name": "Read Stellio History of Single Entity",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true
+        },
+        "nodes": [
+            "abc1e8247cf170df",
+            "1fb2f532900d5677",
+            "a80fcd6812b74f41",
+            "01cbc1f69af3385e",
+            "085e999f37347518",
+            "c1bb3a31bda145e2",
+            "3fe4a98fa5ab5716"
+        ],
+        "x": 714,
+        "y": 19,
+        "w": 812,
+        "h": 142
+    },
+    {
+        "id": "e26b08628d1dd205",
+        "type": "group",
+        "z": "130060434246f931",
+        "name": "Read Stellio History of Single Entity",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true
+        },
+        "nodes": [
+            "5a068c74ae8a54ed",
+            "b863ea11adc07bb7",
+            "e43a4752f681f97c",
+            "64f2223ec2751de7",
+            "3a4a83cc92bafd59",
+            "87918d4cbd424db1",
+            "ce67f8aa3a0aadb0"
+        ],
+        "x": 714,
+        "y": 19,
+        "w": 812,
+        "h": 142
+    },
+    {
+        "id": "0976576945adbcee",
+        "type": "group",
+        "z": "279efa75137f8875",
+        "name": "Read Stellio History of Single Entity",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true
+        },
+        "nodes": [
+            "1de523737cc1bac1",
+            "16f135259c7d0fe0",
+            "e4ef25c8647de9f5",
+            "b595de17122fc679",
+            "96825e5cde62bf3b",
+            "fefcdc2f97175db6",
+            "2ca8f9151e363a06"
+        ],
+        "x": 714,
+        "y": 19,
+        "w": 812,
+        "h": 142
+    },
+    {
+        "id": "96b858f5dc691b79",
+        "type": "group",
+        "z": "dfb95ed1ca05b9e7",
+        "name": "Read Stellio Types",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true
+        },
+        "nodes": [
+            "aaa99ebe73180671",
+            "d839a3a3f6fe7229",
+            "62aaa14ce07ed422",
+            "f51594451ae72033"
+        ],
+        "x": 34,
+        "y": 39,
+        "w": 772,
+        "h": 82
+    },
+    {
+        "id": "9aa2cbeacb0d89aa",
+        "type": "group",
+        "z": "dfb95ed1ca05b9e7",
+        "name": "Read Stellio Entities",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true
+        },
+        "nodes": [
+            "b6befff894dd0f3c",
+            "470e75cc3d0f2a37",
+            "2d938292931aeb9e",
+            "0e72a1d46923aa7d",
+            "e5fa5ef292ab7068",
+            "83ace89d80e2a34f",
+            "26ee5b04de0f0523",
+            "624259a54c0b1b68",
+            "7401845cfcd6fc6a",
+            "842d628a28205bd7",
+            "6edf16ac0444535b",
+            "5ddb350bb8e2a70d",
+            "45ac4cabe414a289",
+            "98518ec874e4f17c",
+            "0b9b9222e07bc61d",
+            "e59329e07df37e35",
+            "e68b220b78f69ac9",
+            "ad8de4971a5db7cd",
+            "46ff97a8d9969fe2",
+            "cf5faa6bbaccf325",
+            "ecb1fa515e72cf32",
+            "338cbb36825b838f",
+            "82a4013d62953c3f",
+            "d66c487e1331f920",
+            "0b9e877aaaa45c11"
+        ],
+        "x": 34,
+        "y": 299,
+        "w": 1092,
+        "h": 562
+    },
+    {
+        "id": "efe3716d0229b80a",
+        "type": "group",
+        "z": "dfb95ed1ca05b9e7",
+        "name": "Delete Stellio Entities",
+        "style": {
+            "fill": "#ffbfbf",
+            "label": true
+        },
+        "nodes": [
+            "f01f56cd171e87e2",
+            "b8aa9617e5afadea",
+            "f60ab717fc148df1",
+            "e62d2b13053cdd14",
+            "7cfee927748434e4",
+            "83f2aa6b1e75f5db",
+            "8dde99fbf1d37fd5"
+        ],
+        "x": 34,
+        "y": 139,
+        "w": 852,
+        "h": 142
+    },
+    {
+        "id": "81d3198b85645e10",
+        "type": "group",
+        "z": "50940b605fe0d135",
+        "name": "Read Stellio History of Single Entity",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true
+        },
+        "nodes": [
+            "f52718f897020a92",
+            "09557e47e2ed1b35",
+            "39bfd399e38de3fe",
+            "0dd3c8151e991918",
+            "32df7b0e6f61b5bf",
+            "8cc62f53c016ddfa",
+            "2e641ad7068c1df0"
+        ],
+        "x": 714,
+        "y": 39,
+        "w": 812,
+        "h": 142
+    },
+    {
+        "id": "18958834c5323352",
+        "type": "group",
+        "z": "50940b605fe0d135",
+        "name": "RAW",
+        "style": {
+            "fill": "#bfdbef",
+            "label": true
+        },
+        "nodes": [
+            "bd8d2768304e37fb",
+            "492ee54e54f607a7",
+            "ab2f5f236acc5f46",
+            "d0f4b03ae99c8351",
+            "661e9b913953ba69",
+            "192b12dc023bff79",
+            "ef380b50cc54522a",
+            "2d89db399f069a18",
+            "1095181b19e43685",
+            "5c9b4f93bccb15aa",
+            "0d50438015d7681a",
+            "77e5e0f98219cf4d",
+            "a3ae30d5e2cd4afa",
+            "a1c946c9a4229481",
+            "64b1a1ff9f6f14af",
+            "d39d45b2f3cc835e",
+            "9f08d12ea3b3c88e"
+        ],
+        "x": 34,
+        "y": 39,
+        "w": 652,
+        "h": 562
+    },
+    {
+        "id": "2c212039c596ad4f",
+        "type": "group",
+        "z": "50940b605fe0d135",
+        "name": "SDM: Transportation.EVChargingStation",
+        "style": {
+            "fill": "#bfdbef",
+            "label": true
+        },
+        "nodes": [
+            "0907d04275ebde7a",
+            "a4e4d8b358e5ab48",
+            "fa2f382b876ba2b9",
+            "2eeff5c2b04351b4",
+            "c52f32bc1de5cde5",
+            "4fd2d351117d5831",
+            "0f1dd9a3a8c0a9ac",
+            "1ff92a421c068255",
+            "878584f7de3888a0",
+            "aefc57e4e237a029",
+            "2e904d7692faf822",
+            "9e359282cc553c91",
+            "0483fbd63df27657",
+            "b0eaedb9ee95fd31",
+            "07920faaf573d8bd",
+            "17346f7fabb649dc",
+            "cc55337bcbc6863d",
+            "58609bb0f309d986"
+        ],
+        "x": 34,
+        "y": 639,
+        "w": 652,
+        "h": 622
+    },
+    {
+        "id": "1edfe0b06c1b04db",
+        "type": "group",
+        "z": "50940b605fe0d135",
+        "name": "Read Stellio History of Single Entity",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true
+        },
+        "nodes": [
+            "3081c1c5159b8ff1",
+            "a7419744e0843ad5",
+            "93ef6e8bd3e995dc",
+            "82747105a7c9d6e5",
+            "0b7bc51b6926fbbd",
+            "6b735c1d6fc275a0",
+            "055be2d5c94e15c1"
+        ],
+        "x": 714,
+        "y": 639,
+        "w": 812,
+        "h": 142
+    },
+    {
+        "id": "8dde99fbf1d37fd5",
+        "type": "comment",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "efe3716d0229b80a",
+        "name": "You're on a prod sevice/tenant!",
+        "info": "",
+        "x": 730,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "aaa99ebe73180671",
+        "type": "inject",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "96b858f5dc691b79",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "62aaa14ce07ed422"
+            ]
+        ]
+    },
+    {
+        "id": "d839a3a3f6fe7229",
+        "type": "http request",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "96b858f5dc691b79",
+        "name": "GET",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 530,
+        "y": 80,
+        "wires": [
+            [
+                "f51594451ae72033"
+            ]
+        ]
+    },
+    {
+        "id": "62aaa14ce07ed422",
+        "type": "function",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "96b858f5dc691b79",
+        "name": "prepare request",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/types`;\n\nmsg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "d839a3a3f6fe7229"
+            ]
+        ]
+    },
+    {
+        "id": "f51594451ae72033",
+        "type": "debug",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "96b858f5dc691b79",
+        "name": "Stellio types",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload.typeList",
+        "targetType": "msg",
+        "statusVal": "'n: ' & $count(msg.payload.typeList)",
+        "statusType": "jsonata",
+        "x": 690,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "b6befff894dd0f3c",
+        "type": "http request",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "GET",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 290,
+        "y": 700,
+        "wires": [
+            [
+                "cf5faa6bbaccf325",
+                "2d938292931aeb9e"
+            ]
+        ]
+    },
+    {
+        "id": "470e75cc3d0f2a37",
+        "type": "function",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "set headers",
+        "func": "msg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 640,
+        "wires": [
+            [
+                "b6befff894dd0f3c"
+            ]
+        ]
+    },
+    {
+        "id": "2d938292931aeb9e",
+        "type": "debug",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "Stellio entities",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "'n: ' & $count(msg.payload)",
+        "statusType": "jsonata",
+        "x": 480,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "0e72a1d46923aa7d",
+        "type": "http request",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "HTTP",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 450,
+        "y": 420,
+        "wires": [
+            [
+                "624259a54c0b1b68",
+                "e68b220b78f69ac9"
+            ]
+        ]
+    },
+    {
+        "id": "e5fa5ef292ab7068",
+        "type": "function",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "get types",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/types`;\n\nmsg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 420,
+        "wires": [
+            [
+                "0e72a1d46923aa7d"
+            ]
+        ]
+    },
+    {
+        "id": "83ace89d80e2a34f",
+        "type": "debug",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "entity types",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'n: ' & $count(msg.payload)",
+        "statusType": "jsonata",
+        "x": 1010,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "26ee5b04de0f0523",
+        "type": "inject",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "",
+        "props": [
+            {
+                "p": "entityType",
+                "v": "EVChargingStation",
+                "vt": "str"
+            },
+            {
+                "p": "entityType",
+                "v": "all",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 340,
+        "wires": [
+            [
+                "98518ec874e4f17c",
+                "0b9b9222e07bc61d"
+            ]
+        ]
+    },
+    {
+        "id": "624259a54c0b1b68",
+        "type": "change",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "read result",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.typeList",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 400,
+        "wires": [
+            [
+                "ad8de4971a5db7cd"
+            ]
+        ]
+    },
+    {
+        "id": "7401845cfcd6fc6a",
+        "type": "split",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 150,
+        "y": 580,
+        "wires": [
+            [
+                "842d628a28205bd7"
+            ]
+        ]
+    },
+    {
+        "id": "842d628a28205bd7",
+        "type": "change",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "entityType",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 580,
+        "wires": [
+            [
+                "d66c487e1331f920"
+            ]
+        ]
+    },
+    {
+        "id": "6edf16ac0444535b",
+        "type": "join",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 670,
+        "y": 760,
+        "wires": [
+            [
+                "82a4013d62953c3f"
+            ]
+        ]
+    },
+    {
+        "id": "5ddb350bb8e2a70d",
+        "type": "debug",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "Stellio entities",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'n: ' & $count(msg.payload)",
+        "statusType": "jsonata",
+        "x": 700,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "45ac4cabe414a289",
+        "type": "function",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "flatten",
+        "func": "msg.payload = msg.payload.flat()\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 820,
+        "wires": [
+            [
+                "5ddb350bb8e2a70d"
+            ]
+        ]
+    },
+    {
+        "id": "98518ec874e4f17c",
+        "type": "debug",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "entityType",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "msg.entityType",
+        "statusType": "msg",
+        "x": 330,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "0b9b9222e07bc61d",
+        "type": "switch",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "",
+        "property": "entityType",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "all",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 150,
+        "y": 440,
+        "wires": [
+            [
+                "e5fa5ef292ab7068"
+            ],
+            [
+                "e59329e07df37e35"
+            ]
+        ]
+    },
+    {
+        "id": "e59329e07df37e35",
+        "type": "change",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[ msg.entityType ]",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 500,
+        "wires": [
+            [
+                "ad8de4971a5db7cd"
+            ]
+        ]
+    },
+    {
+        "id": "e68b220b78f69ac9",
+        "type": "debug",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "Stellio types",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 630,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "ad8de4971a5db7cd",
+        "type": "change",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "no-op",
+        "rules": [],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 500,
+        "wires": [
+            [
+                "83ace89d80e2a34f",
+                "7401845cfcd6fc6a"
+            ]
+        ]
+    },
+    {
+        "id": "46ff97a8d9969fe2",
+        "type": "function",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "configure first page",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entities?type=${msg.entityType}`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 640,
+        "wires": [
+            [
+                "470e75cc3d0f2a37"
+            ]
+        ]
+    },
+    {
+        "id": "cf5faa6bbaccf325",
+        "type": "function",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "pagination",
+        "func": "// Function: if there is a next page; set url accordingly and return, otherwise do nothing.\n// Explanation:\n// If there is a next page; it's defined in the link response header.\n// https://www.w3.org/wiki/LinkHeader\n// There may be (and are) multiple links in this header.\n// See NGSI-LD Spec Section 6.3.10 Pagination behaviour:\n// https://www.etsi.org/deliver/etsi_gs/CIM/001_099/009/01.06.01_60/gs_CIM009v010601p.pdf\n// Author: pkel\n\nvar outA = null;\n\nconst m = msg.headers.link.match(/<([^>]*)>;\\s*rel=[\"']?next[\"']?/)\nif (m) {\n    outA = {\n        url: env.get('STELLIO_API_URL') + m[1],\n        outer_parts: msg.outer_parts,\n    };\n} else {\n    msg.complete = true;\n}\n\nreturn [outA, msg]",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 760,
+        "wires": [
+            [
+                "ecb1fa515e72cf32",
+                "470e75cc3d0f2a37"
+            ],
+            [
+                "6edf16ac0444535b"
+            ]
+        ]
+    },
+    {
+        "id": "ecb1fa515e72cf32",
+        "type": "debug",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "next page",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "url",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "338cbb36825b838f",
+        "type": "join",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 390,
+        "y": 820,
+        "wires": [
+            [
+                "45ac4cabe414a289"
+            ]
+        ]
+    },
+    {
+        "id": "82a4013d62953c3f",
+        "type": "function",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "flatten",
+        "func": "msg.payload = msg.payload.flat()\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 760,
+        "wires": [
+            [
+                "0b9e877aaaa45c11"
+            ]
+        ]
+    },
+    {
+        "id": "d66c487e1331f920",
+        "type": "change",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "prep nested split/join",
+        "rules": [
+            {
+                "t": "move",
+                "p": "parts",
+                "pt": "msg",
+                "to": "outer_parts",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 580,
+        "wires": [
+            [
+                "46ff97a8d9969fe2"
+            ]
+        ]
+    },
+    {
+        "id": "0b9e877aaaa45c11",
+        "type": "change",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "9aa2cbeacb0d89aa",
+        "name": "finalize nested split/join",
+        "rules": [
+            {
+                "t": "move",
+                "p": "outer_parts",
+                "pt": "msg",
+                "to": "parts",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "entityType",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 190,
+        "y": 820,
+        "wires": [
+            [
+                "338cbb36825b838f"
+            ]
+        ]
+    },
+    {
+        "id": "f01f56cd171e87e2",
+        "type": "http request",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "efe3716d0229b80a",
+        "name": "HTTP",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "f60ab717fc148df1"
+            ]
+        ]
+    },
+    {
+        "id": "b8aa9617e5afadea",
+        "type": "function",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "efe3716d0229b80a",
+        "name": "prepare request",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\n\nmsg.method = 'POST';\n\nmsg.url = `${stellio}/entityOperations/delete`;\n\nmsg.headers = {};\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "f01f56cd171e87e2"
+            ]
+        ]
+    },
+    {
+        "id": "f60ab717fc148df1",
+        "type": "debug",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "efe3716d0229b80a",
+        "name": "Stellio delete",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 490,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "e62d2b13053cdd14",
+        "type": "comment",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "efe3716d0229b80a",
+        "name": "Connect to output of Read Entities flow below",
+        "info": "",
+        "x": 230,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "7cfee927748434e4",
+        "type": "function",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "efe3716d0229b80a",
+        "name": "extract ids from entity list",
+        "func": "msg.payload = msg.payload.map(x => x.id);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 180,
+        "wires": [
+            [
+                "83f2aa6b1e75f5db",
+                "b8aa9617e5afadea"
+            ]
+        ]
+    },
+    {
+        "id": "83f2aa6b1e75f5db",
+        "type": "debug",
+        "z": "dfb95ed1ca05b9e7",
+        "g": "efe3716d0229b80a",
+        "name": "entity ids",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'n: ' & $count(msg.payload)",
+        "statusType": "jsonata",
+        "x": 780,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "b6ebc34954a5355d",
+        "type": "inject",
+        "z": "e239f32639a28b7a",
+        "name": "",
+        "props": [
+            {
+                "p": "timestamp",
+                "v": "",
+                "vt": "date"
+            }
+        ],
+        "repeat": "",
+        "crontab": "*/15 0-23 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "bde7a5a003f78d2c",
+                "3f267949c9e94932"
+            ]
+        ]
+    },
+    {
+        "id": "bde7a5a003f78d2c",
+        "type": "http request",
+        "z": "e239f32639a28b7a",
+        "name": "GET station_information",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://api.mobidata-bw.de/sharing/gbfs/v2/nextbike_kk/station_information",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 250,
+        "y": 240,
+        "wires": [
+            [
+                "20c2573cb7edda06",
+                "d69f2824266e89d9"
+            ]
+        ]
+    },
+    {
+        "id": "20c2573cb7edda06",
+        "type": "debug",
+        "z": "e239f32639a28b7a",
+        "name": "station_information",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 550,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "07a06b1b3c15068e",
+        "type": "function",
+        "z": "e239f32639a28b7a",
+        "name": "build SDM JSON-LD",
+        "func": "let observedAt = new Date(msg.timestamp).toISOString()\n\nlet observations = []\n\nfunction property(value) {\n    return {\n        type: \"Property\",\n        value,\n        observedAt,\n    }\n}\n\nfunction point({lon, lat}) {\n    return {\n        type: \"GeoProperty\",\n        value: {\n            type: \"Point\",\n            coordinates: [lon, lat],\n        },\n        observedAt,\n    }\n}\n\nfor (const x of (msg.payload.data.stations)) {\n    const oDT = new Date(x.last_reported * 1000).toISOString();\n\n    observations.push({\n        id : `urn:sdm:BikeHireDockingStation:${x.station_id}`,\n        type: 'BikeHireDockingStation',\n        alternateName: property(x.short_name),\n        availableBikeNumber: property(x.num_bikes_available),\n        location: point({lat: x.lat, lon: x.lon}),\n        freeSlotNumber: property(x.num_docks_available),\n        name: property(x.name),\n        observationDateTime: property(oDT),\n        stationCode: property(x.station_id),\n        '@context': [\n            // \"https://context.udp-kn.de/main-context.jsonld\",\n            // 'https://raw.githubusercontent.com/smart-data-models/dataModel.Transportation/2c96c186cefb2e37eccd23313f07095a86e079dd/context.jsonld',\n            // \"https://raw.githubusercontent.com/smart-data-models/dataModel.Transportation/master/context.jsonld\"\n        ],\n    })\n}\n\nreturn {\n    payload : observations,\n    timestamp: msg.timestamp,\n    }",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 500,
+        "wires": [
+            [
+                "fd6432b96df1a39d",
+                "94e27317ccdf68d1",
+                "8168eb230e962337",
+                "46c2670f52912c77"
+            ]
+        ]
+    },
+    {
+        "id": "fd6432b96df1a39d",
+        "type": "debug",
+        "z": "e239f32639a28b7a",
+        "name": "first SDM JSON-LD",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload[0]",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "8168eb230e962337",
+        "type": "function",
+        "z": "e239f32639a28b7a",
+        "name": "prepare Stellio request",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entityOperations/upsert?options=update`;\n\nmsg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 620,
+        "wires": [
+            [
+                "52a57baabe2f0d95"
+            ]
+        ]
+    },
+    {
+        "id": "0366dccfbd6de154",
+        "type": "debug",
+        "z": "e239f32639a28b7a",
+        "name": "Stellio response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 600,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "94e27317ccdf68d1",
+        "type": "debug",
+        "z": "e239f32639a28b7a",
+        "name": "# observations",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'n: ' & $count(msg.payload)",
+        "statusType": "jsonata",
+        "x": 540,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "52a57baabe2f0d95",
+        "type": "http request",
+        "z": "e239f32639a28b7a",
+        "name": "POST",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 430,
+        "y": 620,
+        "wires": [
+            [
+                "0366dccfbd6de154",
+                "a95d1084f9e7d494"
+            ]
+        ]
+    },
+    {
+        "id": "a14e16b3da66db16",
+        "type": "http request",
+        "z": "e239f32639a28b7a",
+        "name": "GET station_status",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://api.mobidata-bw.de/sharing/gbfs/v2/nextbike_kk/station_status",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 230,
+        "y": 360,
+        "wires": [
+            [
+                "2e0df4678893b499",
+                "693886aa8d97ef98"
+            ]
+        ]
+    },
+    {
+        "id": "2e0df4678893b499",
+        "type": "debug",
+        "z": "e239f32639a28b7a",
+        "name": "station_status",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 540,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "d69f2824266e89d9",
+        "type": "change",
+        "z": "e239f32639a28b7a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "info",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 220,
+        "y": 300,
+        "wires": [
+            [
+                "a14e16b3da66db16"
+            ]
+        ]
+    },
+    {
+        "id": "693886aa8d97ef98",
+        "type": "function",
+        "z": "e239f32639a28b7a",
+        "name": "merge info into status",
+        "func": "// prepare lookup table for station information\nvar info_table = {}\nfor (const x of (msg.info.data.stations)) {\n    info_table[x.station_id] = x;\n}\n\n// merge station information into payload / status status\nfor (const x of (msg.payload.data.stations)) {\n    Object.assign(x, info_table[x.station_id]);\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 420,
+        "wires": [
+            [
+                "3a9ddc83c24e2275",
+                "07a06b1b3c15068e"
+            ]
+        ]
+    },
+    {
+        "id": "3a9ddc83c24e2275",
+        "type": "debug",
+        "z": "e239f32639a28b7a",
+        "name": "augmented station_status",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 570,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "3f267949c9e94932",
+        "type": "debug",
+        "z": "e239f32639a28b7a",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 530,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a95d1084f9e7d494",
+        "type": "debug",
+        "z": "e239f32639a28b7a",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 590,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "6fb43240c4e89b86",
+        "type": "comment",
+        "z": "e239f32639a28b7a",
+        "name": "Smart Data Model: Transportation.BikeHireDockingStation",
+        "info": "",
+        "x": 250,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "6ebe2d7ccbf35d25",
+        "type": "comment",
+        "z": "e239f32639a28b7a",
+        "name": "Konrad Leihrad Stationen aus Mobidata GBFS",
+        "info": "",
+        "x": 210,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "abc1e8247cf170df",
+        "type": "inject",
+        "z": "e239f32639a28b7a",
+        "g": "67bf633c0fe1bc4a",
+        "name": "set id",
+        "props": [
+            {
+                "p": "id",
+                "v": "urn:sdm:BikeHireDockingStation:NBO:Station:379036779",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 810,
+        "y": 60,
+        "wires": [
+            [
+                "a80fcd6812b74f41",
+                "c1bb3a31bda145e2"
+            ]
+        ]
+    },
+    {
+        "id": "1fb2f532900d5677",
+        "type": "http request",
+        "z": "e239f32639a28b7a",
+        "g": "67bf633c0fe1bc4a",
+        "name": "GET",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1170,
+        "y": 60,
+        "wires": [
+            [
+                "01cbc1f69af3385e"
+            ]
+        ]
+    },
+    {
+        "id": "a80fcd6812b74f41",
+        "type": "function",
+        "z": "e239f32639a28b7a",
+        "g": "67bf633c0fe1bc4a",
+        "name": "prepare request",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entities/${msg.id}`;\n\nmsg.headers = {};\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 60,
+        "wires": [
+            [
+                "1fb2f532900d5677"
+            ]
+        ]
+    },
+    {
+        "id": "01cbc1f69af3385e",
+        "type": "debug",
+        "z": "e239f32639a28b7a",
+        "g": "67bf633c0fe1bc4a",
+        "name": "Stellio entity",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 1370,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "085e999f37347518",
+        "type": "http request",
+        "z": "e239f32639a28b7a",
+        "g": "67bf633c0fe1bc4a",
+        "name": "GET",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1170,
+        "y": 120,
+        "wires": [
+            [
+                "3fe4a98fa5ab5716"
+            ]
+        ]
+    },
+    {
+        "id": "c1bb3a31bda145e2",
+        "type": "function",
+        "z": "e239f32639a28b7a",
+        "g": "67bf633c0fe1bc4a",
+        "name": "prepare request",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/temporal/entities/${msg.id}`;\n\nmsg.headers = {};\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 120,
+        "wires": [
+            [
+                "085e999f37347518"
+            ]
+        ]
+    },
+    {
+        "id": "3fe4a98fa5ab5716",
+        "type": "debug",
+        "z": "e239f32639a28b7a",
+        "g": "67bf633c0fe1bc4a",
+        "name": "Stellio entity history",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 1390,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "46c2670f52912c77",
+        "type": "function",
+        "z": "e239f32639a28b7a",
+        "name": "prepare Stellio request Operator DB",
+        "func": "const stellio = \"http://stellio-stellio-context-broker-api-gateway.prd-ngsi-stack.svc.cluster.local:8080\" + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entityOperations/upsert?options=update`;\n\nmsg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 800,
+        "wires": [
+            [
+                "2994ddcb3da4a196"
+            ]
+        ]
+    },
+    {
+        "id": "427cdb1c56be9961",
+        "type": "debug",
+        "z": "e239f32639a28b7a",
+        "name": "Stellio response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 600,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "2994ddcb3da4a196",
+        "type": "http request",
+        "z": "e239f32639a28b7a",
+        "name": "POST",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 430,
+        "y": 860,
+        "wires": [
+            [
+                "427cdb1c56be9961",
+                "93e08e303a9ddda4"
+            ]
+        ]
+    },
+    {
+        "id": "93e08e303a9ddda4",
+        "type": "debug",
+        "z": "e239f32639a28b7a",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 590,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "8493b27b820a4d1f",
+        "type": "inject",
+        "z": "130060434246f931",
+        "name": "",
+        "props": [
+            {
+                "p": "timestamp",
+                "v": "",
+                "vt": "date"
+            }
+        ],
+        "repeat": "",
+        "crontab": "*/15 0-23 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "377c6fee1f865163",
+                "dd37b8991aa7f0c3"
+            ]
+        ]
+    },
+    {
+        "id": "dd37b8991aa7f0c3",
+        "type": "http request",
+        "z": "130060434246f931",
+        "name": "GET free_bike_status",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://api.mobidata-bw.de/sharing/gbfs/v2/zeus_konstanz/free_bike_status",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 240,
+        "y": 240,
+        "wires": [
+            [
+                "db3f8885904eedd7",
+                "2aa539e139d858f9"
+            ]
+        ]
+    },
+    {
+        "id": "db3f8885904eedd7",
+        "type": "debug",
+        "z": "130060434246f931",
+        "name": "free_bike_status",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 540,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "2aa539e139d858f9",
+        "type": "function",
+        "z": "130060434246f931",
+        "name": "build SDM JSON-LD",
+        "func": "let observedAt = new Date(msg.timestamp).toISOString()\n\nlet observations = []\n\nfunction property(value) {\n    return {\n        type: \"Property\",\n        value,\n        observedAt,\n    }\n}\n\nfunction point({lon, lat}) {\n    return {\n        type: \"GeoProperty\",\n        value: {\n            type: \"Point\",\n            coordinates: [lon, lat],\n        },\n        observedAt,\n    }\n}\n\nfor (const x of (msg.payload.data.bikes)) {\n    const oDT = new Date(x.last_reported * 1000).toISOString();\n    \n    var status = \"free\";\n    if (x.is_reserved) {\n        status += \", reserved\";\n    }\n    if (x.is_disabled) {\n        status += \", disabled\";\n    }\n\n    observations.push({\n        id : `urn:sdm:Vehicle:${x.bike_id}`,\n        type: 'Vehicle',\n        fleetVehicleId: property(x.bike_id),\n        vehicleType: property('scooter'),\n        location: point({ lat: x.lat, lon: x.lon }),\n        observationDateTime: property(oDT),\n        serviceStatus: property(status),\n        battery: property(x.current_range_meters), // SDM spec requests percentage!\n        '@context': [\n            // 'https://raw.githubusercontent.com/smart-data-models/dataModel.Transportation/2c96c186cefb2e37eccd23313f07095a86e079dd/context.jsonld'\n        ],\n    })\n}\n\nreturn {\n    payload : observations,\n    timestamp: msg.timestamp,\n    }",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 320,
+        "wires": [
+            [
+                "6768d6bc5fbd4980",
+                "90c57bd708ee7dd1",
+                "99113f2bb8223169",
+                "e1b434ecf032d5fc"
+            ]
+        ]
+    },
+    {
+        "id": "6768d6bc5fbd4980",
+        "type": "debug",
+        "z": "130060434246f931",
+        "name": "first SDM JSON-LD",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload[0]",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "99113f2bb8223169",
+        "type": "function",
+        "z": "130060434246f931",
+        "name": "prepare Stellio request",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entityOperations/upsert?options=update`;\n\nmsg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 440,
+        "wires": [
+            [
+                "6d60509c0eb54ef7",
+                "45dc14e30ee7a396",
+                "aa8161434bbef525"
+            ]
+        ]
+    },
+    {
+        "id": "7384dfaaa9436db7",
+        "type": "debug",
+        "z": "130060434246f931",
+        "name": "Stellio response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 360,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "90c57bd708ee7dd1",
+        "type": "debug",
+        "z": "130060434246f931",
+        "name": "# observations",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'n: ' & $count(msg.payload)",
+        "statusType": "jsonata",
+        "x": 540,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "aa8161434bbef525",
+        "type": "http request",
+        "z": "130060434246f931",
+        "name": "POST",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 190,
+        "y": 540,
+        "wires": [
+            [
+                "7384dfaaa9436db7",
+                "ee9b84053983e21c"
+            ]
+        ]
+    },
+    {
+        "id": "377c6fee1f865163",
+        "type": "debug",
+        "z": "130060434246f931",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 530,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "ee9b84053983e21c",
+        "type": "debug",
+        "z": "130060434246f931",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 350,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "6d60509c0eb54ef7",
+        "type": "debug",
+        "z": "130060434246f931",
+        "name": "Stellio Payload",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "45dc14e30ee7a396",
+        "type": "function",
+        "z": "130060434246f931",
+        "name": "uniq id",
+        "func": "const x = new Set(msg.payload.map((x) => (x.id)))\nmsg.payload = x.size\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 460,
+        "wires": [
+            [
+                "387b603927b1db84"
+            ]
+        ]
+    },
+    {
+        "id": "387b603927b1db84",
+        "type": "debug",
+        "z": "130060434246f931",
+        "name": "# ids",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'n: ' & payload",
+        "statusType": "jsonata",
+        "x": 590,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "d5d28841d18b7492",
+        "type": "comment",
+        "z": "130060434246f931",
+        "name": "Smart Data Model: Transportation.Vehicle",
+        "info": "",
+        "x": 200,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "6aab51ef9a4c4c65",
+        "type": "comment",
+        "z": "130060434246f931",
+        "name": "Zeus Leihroller Fahrzeuge aus Mobidata GBFS",
+        "info": "",
+        "x": 220,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "5a068c74ae8a54ed",
+        "type": "inject",
+        "z": "130060434246f931",
+        "g": "e26b08628d1dd205",
+        "name": "set id",
+        "props": [
+            {
+                "p": "id",
+                "v": "urn:sdm:Vehicle:ZEU:Vehicle:c912ad2fbaaaf026091a9a3a5606f681",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 810,
+        "y": 60,
+        "wires": [
+            [
+                "e43a4752f681f97c",
+                "87918d4cbd424db1"
+            ]
+        ]
+    },
+    {
+        "id": "b863ea11adc07bb7",
+        "type": "http request",
+        "z": "130060434246f931",
+        "g": "e26b08628d1dd205",
+        "name": "GET",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1170,
+        "y": 60,
+        "wires": [
+            [
+                "64f2223ec2751de7"
+            ]
+        ]
+    },
+    {
+        "id": "e43a4752f681f97c",
+        "type": "function",
+        "z": "130060434246f931",
+        "g": "e26b08628d1dd205",
+        "name": "prepare request",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entities/${msg.id}`;\n\nmsg.headers = {};\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 60,
+        "wires": [
+            [
+                "b863ea11adc07bb7"
+            ]
+        ]
+    },
+    {
+        "id": "64f2223ec2751de7",
+        "type": "debug",
+        "z": "130060434246f931",
+        "g": "e26b08628d1dd205",
+        "name": "Stellio entity",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 1370,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "3a4a83cc92bafd59",
+        "type": "http request",
+        "z": "130060434246f931",
+        "g": "e26b08628d1dd205",
+        "name": "GET",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1170,
+        "y": 120,
+        "wires": [
+            [
+                "ce67f8aa3a0aadb0"
+            ]
+        ]
+    },
+    {
+        "id": "87918d4cbd424db1",
+        "type": "function",
+        "z": "130060434246f931",
+        "g": "e26b08628d1dd205",
+        "name": "prepare request",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/temporal/entities/${msg.id}`;\n\nmsg.headers = {};\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 120,
+        "wires": [
+            [
+                "3a4a83cc92bafd59"
+            ]
+        ]
+    },
+    {
+        "id": "ce67f8aa3a0aadb0",
+        "type": "debug",
+        "z": "130060434246f931",
+        "g": "e26b08628d1dd205",
+        "name": "Stellio entity history",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 1390,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "e1b434ecf032d5fc",
+        "type": "function",
+        "z": "130060434246f931",
+        "name": "prepare Stellio request Operator DB",
+        "func": "const stellio = \"http://stellio-stellio-context-broker-api-gateway.prd-ngsi-stack.svc.cluster.local:8080\" + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entityOperations/upsert?options=update`;\n\nmsg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 740,
+        "wires": [
+            [
+                "08d9fd0a4ece43c8"
+            ]
+        ]
+    },
+    {
+        "id": "d99d9a0d02a78c25",
+        "type": "debug",
+        "z": "130060434246f931",
+        "name": "Stellio response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 580,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "08d9fd0a4ece43c8",
+        "type": "http request",
+        "z": "130060434246f931",
+        "name": "POST",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 410,
+        "y": 800,
+        "wires": [
+            [
+                "d99d9a0d02a78c25",
+                "e0e30fa2751542d7"
+            ]
+        ]
+    },
+    {
+        "id": "e0e30fa2751542d7",
+        "type": "debug",
+        "z": "130060434246f931",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 570,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "145a9bcf92b28837",
+        "type": "inject",
+        "z": "279efa75137f8875",
+        "name": "inject",
+        "props": [
+            {
+                "p": "timestamp",
+                "v": "",
+                "vt": "date"
+            },
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload[0]",
+                "v": "nextbike_kk",
+                "vt": "str"
+            },
+            {
+                "p": "payload[1]",
+                "v": "zeus_konstanz",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "*/15 0-23 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "7acb43a82774b9ab",
+                "645a6228433248cc"
+            ]
+        ]
+    },
+    {
+        "id": "ad11b6acc41d2d5b",
+        "type": "http request",
+        "z": "279efa75137f8875",
+        "name": "GET",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 330,
+        "y": 540,
+        "wires": [
+            [
+                "6b7982934d3d6ff4",
+                "3530b3f2f4ac54bc"
+            ]
+        ]
+    },
+    {
+        "id": "6b7982934d3d6ff4",
+        "type": "debug",
+        "z": "279efa75137f8875",
+        "name": "GBFS response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 520,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "7acb43a82774b9ab",
+        "type": "debug",
+        "z": "279efa75137f8875",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 530,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "dca9739ceb14133b",
+        "type": "split",
+        "z": "279efa75137f8875",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 130,
+        "y": 480,
+        "wires": [
+            [
+                "877bce3719503373"
+            ]
+        ]
+    },
+    {
+        "id": "877bce3719503373",
+        "type": "function",
+        "z": "279efa75137f8875",
+        "name": "prepare req",
+        "func": "msg.url = msg.payload.feed.url;\nmsg.gbfs_topic = msg.payload.topic;\nmsg.gbfs_type = msg.payload.feed.name;\nmsg.payload = '';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 170,
+        "y": 540,
+        "wires": [
+            [
+                "ad11b6acc41d2d5b"
+            ]
+        ]
+    },
+    {
+        "id": "9b3f87d3ae82233f",
+        "type": "function",
+        "z": "279efa75137f8875",
+        "name": "prepare Stellio request",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entityOperations/upsert?options=update`;\n\nmsg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 780,
+        "wires": [
+            [
+                "48f8855b3840e6c2"
+            ]
+        ]
+    },
+    {
+        "id": "bb8fae8a5009750b",
+        "type": "debug",
+        "z": "279efa75137f8875",
+        "name": "Stellio response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 560,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "48f8855b3840e6c2",
+        "type": "http request",
+        "z": "279efa75137f8875",
+        "name": "POST",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 780,
+        "wires": [
+            [
+                "bb8fae8a5009750b",
+                "2a142091a421a4d7"
+            ]
+        ]
+    },
+    {
+        "id": "3530b3f2f4ac54bc",
+        "type": "function",
+        "z": "279efa75137f8875",
+        "name": "build SDM JSON-LD",
+        "func": "let observedAt = new Date(msg.timestamp).toISOString()\n\nfunction property(value) {\n    return {\n        type: \"Property\",\n        value,\n        observedAt,\n    }\n}\n\nconst x = msg.payload\n\nconst observation = {\n    id : `urn:sdm:gbfs:${msg.gbfs_type}:mobidata:${msg.gbfs_topic}`,\n    type: msg.gbfs_type,\n    last_updated: property(x.last_updated),\n    ttl: property(x.ttl),\n    data: property(x.data),\n    version: property(x.version),\n    '@context': [\n        // 'https://raw.githubusercontent.com/smart-data-models/dataModel.GBFS/45233d3987bcf2737913652d04681941c2a39433/context.jsonld'\n    ],\n};\n\nreturn {\n    parts: msg.parts,\n    payload : observation,\n    timestamp: msg.timestamp,\n    }",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 600,
+        "wires": [
+            [
+                "30152607da8d4f23"
+            ]
+        ]
+    },
+    {
+        "id": "30152607da8d4f23",
+        "type": "join",
+        "z": "279efa75137f8875",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 130,
+        "y": 680,
+        "wires": [
+            [
+                "dc8410fec5e5a624",
+                "ae3d989b9cebd5d1",
+                "9b3f87d3ae82233f",
+                "9fb5f0f27b305cef"
+            ]
+        ]
+    },
+    {
+        "id": "2a142091a421a4d7",
+        "type": "debug",
+        "z": "279efa75137f8875",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 550,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "dc8410fec5e5a624",
+        "type": "debug",
+        "z": "279efa75137f8875",
+        "name": "first SDM JSON-LD",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload[0]",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "ae3d989b9cebd5d1",
+        "type": "debug",
+        "z": "279efa75137f8875",
+        "name": "# observations",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'n: ' & $count(msg.payload)",
+        "statusType": "jsonata",
+        "x": 500,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "5dea5eb768188c1d",
+        "type": "http request",
+        "z": "279efa75137f8875",
+        "name": "GET feed list",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "2be2dc634fd2067c"
+            ]
+        ]
+    },
+    {
+        "id": "ae2dbea6a3d1aeaf",
+        "type": "debug",
+        "z": "279efa75137f8875",
+        "name": "GBFS feeds",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 570,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "645a6228433248cc",
+        "type": "split",
+        "z": "279efa75137f8875",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 130,
+        "y": 240,
+        "wires": [
+            [
+                "c12048c59854e9c7"
+            ]
+        ]
+    },
+    {
+        "id": "c12048c59854e9c7",
+        "type": "change",
+        "z": "279efa75137f8875",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gbfs_topic",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 240,
+        "wires": [
+            [
+                "17319f509ed87e79"
+            ]
+        ]
+    },
+    {
+        "id": "17319f509ed87e79",
+        "type": "function",
+        "z": "279efa75137f8875",
+        "name": "prepare req",
+        "func": "msg.url = `https://api.mobidata-bw.de/sharing/gbfs/v2/${msg.gbfs_topic}/gbfs`;\nmsg.payload = '';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 170,
+        "y": 300,
+        "wires": [
+            [
+                "5dea5eb768188c1d"
+            ]
+        ]
+    },
+    {
+        "id": "2be2dc634fd2067c",
+        "type": "function",
+        "z": "279efa75137f8875",
+        "name": "read feed list",
+        "func": "const first_lang = Object.keys(msg.payload.data)[0];\n\nconst feeds = msg.payload.data[first_lang].feeds;\n\nmsg.payload = feeds.map(x => ({\n        feed : x,\n        topic: msg.gbfs_topic,\n}))\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 360,
+        "wires": [
+            [
+                "ae2dbea6a3d1aeaf",
+                "8d4026d5a7186443"
+            ]
+        ]
+    },
+    {
+        "id": "8d4026d5a7186443",
+        "type": "join",
+        "z": "279efa75137f8875",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 130,
+        "y": 420,
+        "wires": [
+            [
+                "8569d375d416f152"
+            ]
+        ]
+    },
+    {
+        "id": "e7417e81f35abab4",
+        "type": "debug",
+        "z": "279efa75137f8875",
+        "name": "GBFS feeds",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'n: ' & $count(msg.payload)",
+        "statusType": "jsonata",
+        "x": 570,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "8569d375d416f152",
+        "type": "function",
+        "z": "279efa75137f8875",
+        "name": "flatten",
+        "func": "msg.payload = msg.payload.flat()\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 420,
+        "wires": [
+            [
+                "e7417e81f35abab4",
+                "dca9739ceb14133b"
+            ]
+        ]
+    },
+    {
+        "id": "3b60f20f0636bcc3",
+        "type": "comment",
+        "z": "279efa75137f8875",
+        "name": "Smart Data Model: GBFS",
+        "info": "",
+        "x": 150,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "5ff30e7fc977dac9",
+        "type": "comment",
+        "z": "279efa75137f8875",
+        "name": "Mobidata GBFS für Konrad und Zeus",
+        "info": "",
+        "x": 190,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "1de523737cc1bac1",
+        "type": "inject",
+        "z": "279efa75137f8875",
+        "g": "0976576945adbcee",
+        "name": "set id",
+        "props": [
+            {
+                "p": "id",
+                "v": "urn:sdm:gbfs:station_information:mobidata:nextbike_kk",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 810,
+        "y": 60,
+        "wires": [
+            [
+                "fefcdc2f97175db6"
+            ]
+        ]
+    },
+    {
+        "id": "16f135259c7d0fe0",
+        "type": "http request",
+        "z": "279efa75137f8875",
+        "g": "0976576945adbcee",
+        "name": "GET",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1170,
+        "y": 60,
+        "wires": [
+            [
+                "b595de17122fc679"
+            ]
+        ]
+    },
+    {
+        "id": "e4ef25c8647de9f5",
+        "type": "function",
+        "z": "279efa75137f8875",
+        "g": "0976576945adbcee",
+        "name": "prepare request",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entities/${msg.id}`;\n\nmsg.headers = {};\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 60,
+        "wires": [
+            [
+                "16f135259c7d0fe0"
+            ]
+        ]
+    },
+    {
+        "id": "b595de17122fc679",
+        "type": "debug",
+        "z": "279efa75137f8875",
+        "g": "0976576945adbcee",
+        "name": "Stellio entity",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 1370,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "96825e5cde62bf3b",
+        "type": "http request",
+        "z": "279efa75137f8875",
+        "g": "0976576945adbcee",
+        "name": "GET",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1170,
+        "y": 120,
+        "wires": [
+            [
+                "2ca8f9151e363a06"
+            ]
+        ]
+    },
+    {
+        "id": "fefcdc2f97175db6",
+        "type": "function",
+        "z": "279efa75137f8875",
+        "g": "0976576945adbcee",
+        "name": "prepare request",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/temporal/entities/${msg.id}?options=temporalValues`;\n\nmsg.headers = {};\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\nmsg.headers[\"Link\"] = '<https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context-v1.8.jsonld>; rel=\"http://www.w3.org/ns/json-ld#context\"; type=\"application/ld+json\"'\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 120,
+        "wires": [
+            [
+                "96825e5cde62bf3b"
+            ]
+        ]
+    },
+    {
+        "id": "2ca8f9151e363a06",
+        "type": "debug",
+        "z": "279efa75137f8875",
+        "g": "0976576945adbcee",
+        "name": "Stellio entity history",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 1390,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "9fb5f0f27b305cef",
+        "type": "function",
+        "z": "279efa75137f8875",
+        "name": "prepare Stellio request Operator DB",
+        "func": "const stellio = \"http://stellio-stellio-context-broker-api-gateway.prd-ngsi-stack.svc.cluster.local:8080\" + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entityOperations/upsert?options=update`;\n\nmsg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 980,
+        "wires": [
+            [
+                "8e6f6a917b4f6491"
+            ]
+        ]
+    },
+    {
+        "id": "1dd206f9c2af1aec",
+        "type": "debug",
+        "z": "279efa75137f8875",
+        "name": "Stellio response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 540,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "8e6f6a917b4f6491",
+        "type": "http request",
+        "z": "279efa75137f8875",
+        "name": "POST",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 1040,
+        "wires": [
+            [
+                "1dd206f9c2af1aec",
+                "f28b191a6972c563"
+            ]
+        ]
+    },
+    {
+        "id": "f28b191a6972c563",
+        "type": "debug",
+        "z": "279efa75137f8875",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 530,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "f52718f897020a92",
+        "type": "inject",
+        "z": "50940b605fe0d135",
+        "g": "81d3198b85645e10",
+        "name": "set id",
+        "props": [
+            {
+                "p": "id",
+                "v": "urn:raw:obcpdb:mobidata:konstanz_area",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 810,
+        "y": 80,
+        "wires": [
+            [
+                "39bfd399e38de3fe",
+                "8cc62f53c016ddfa"
+            ]
+        ]
+    },
+    {
+        "id": "09557e47e2ed1b35",
+        "type": "http request",
+        "z": "50940b605fe0d135",
+        "g": "81d3198b85645e10",
+        "name": "GET",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1170,
+        "y": 80,
+        "wires": [
+            [
+                "0dd3c8151e991918"
+            ]
+        ]
+    },
+    {
+        "id": "39bfd399e38de3fe",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "81d3198b85645e10",
+        "name": "prepare request",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entities/${msg.id}`;\n\nmsg.headers = {};\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 80,
+        "wires": [
+            [
+                "09557e47e2ed1b35"
+            ]
+        ]
+    },
+    {
+        "id": "0dd3c8151e991918",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "g": "81d3198b85645e10",
+        "name": "Stellio entity",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 1370,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "32df7b0e6f61b5bf",
+        "type": "http request",
+        "z": "50940b605fe0d135",
+        "g": "81d3198b85645e10",
+        "name": "GET",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1170,
+        "y": 140,
+        "wires": [
+            [
+                "2e641ad7068c1df0"
+            ]
+        ]
+    },
+    {
+        "id": "8cc62f53c016ddfa",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "81d3198b85645e10",
+        "name": "prepare request",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/temporal/entities/${msg.id}`;\n\nmsg.headers = {};\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 140,
+        "wires": [
+            [
+                "32df7b0e6f61b5bf"
+            ]
+        ]
+    },
+    {
+        "id": "2e641ad7068c1df0",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "g": "81d3198b85645e10",
+        "name": "Stellio entity history",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 1390,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "bd8d2768304e37fb",
+        "type": "inject",
+        "z": "50940b605fe0d135",
+        "g": "18958834c5323352",
+        "name": "inject",
+        "props": [
+            {
+                "p": "timestamp",
+                "v": "",
+                "vt": "date"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 03 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "492ee54e54f607a7",
+                "ef380b50cc54522a"
+            ]
+        ]
+    },
+    {
+        "id": "492ee54e54f607a7",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "g": "18958834c5323352",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 530,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ab2f5f236acc5f46",
+        "type": "http request",
+        "z": "50940b605fe0d135",
+        "g": "18958834c5323352",
+        "name": "GET locations",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 180,
+        "y": 240,
+        "wires": [
+            [
+                "d0f4b03ae99c8351",
+                "2d89db399f069a18",
+                "0d50438015d7681a"
+            ]
+        ]
+    },
+    {
+        "id": "d0f4b03ae99c8351",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "g": "18958834c5323352",
+        "name": "OCDB response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 520,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "661e9b913953ba69",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "18958834c5323352",
+        "name": "build JSON-LD",
+        "func": "let observedAt = new Date(msg.timestamp).toISOString()\n\nfunction property(value) {\n    return {\n        type: \"Property\",\n        value,\n        observedAt,\n    }\n}\n\nconst observation = {\n    id: 'urn:raw:obcpdb:mobidata:konstanz_area',\n    type: 'raw_ocpdb',\n    data: property(JSON.stringify(msg.payload)),\n    '@context': [ ],\n};\n\nreturn {\n    payload : [observation],\n    timestamp: msg.timestamp,\n    }",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 420,
+        "wires": [
+            [
+                "192b12dc023bff79",
+                "77e5e0f98219cf4d",
+                "989241cb6a0e7550"
+            ]
+        ]
+    },
+    {
+        "id": "192b12dc023bff79",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "g": "18958834c5323352",
+        "name": "raw JSON-LD",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "ef380b50cc54522a",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "18958834c5323352",
+        "name": "set msg.base_url and msg.path",
+        "func": "msg.base_url = 'https://api.mobidata-bw.de/ocpdb'\nmsg.path = '/api/public/v1/locations'\nmsg.path += '?lon=9.14&lat=47.7&radius=7920'\n\n// test pagination with\n// msg.path += '?lon=9.14&lat=47.7&radius=7920&limit=10'\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 140,
+        "wires": [
+            [
+                "1095181b19e43685"
+            ]
+        ]
+    },
+    {
+        "id": "2d89db399f069a18",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "18958834c5323352",
+        "name": "pagination: continue",
+        "func": "if (msg.payload.hasOwnProperty('next_path')) {\n    msg.path = msg.payload['next_path']\n    return msg\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 240,
+        "wires": [
+            [
+                "1095181b19e43685"
+            ]
+        ]
+    },
+    {
+        "id": "1095181b19e43685",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "18958834c5323352",
+        "name": "set msg.url",
+        "func": "msg.url = msg.base_url + msg.path\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 140,
+        "wires": [
+            [
+                "ab2f5f236acc5f46"
+            ]
+        ]
+    },
+    {
+        "id": "5c9b4f93bccb15aa",
+        "type": "join",
+        "z": "50940b605fe0d135",
+        "g": "18958834c5323352",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "9f08d12ea3b3c88e"
+            ]
+        ]
+    },
+    {
+        "id": "0d50438015d7681a",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "18958834c5323352",
+        "name": "pagination: prep join",
+        "func": "if (!msg.payload.hasOwnProperty('next_path')) {\n    msg.complete = true;\n}\nmsg.payload = msg.payload.items\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 300,
+        "wires": [
+            [
+                "5c9b4f93bccb15aa"
+            ]
+        ]
+    },
+    {
+        "id": "77e5e0f98219cf4d",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "18958834c5323352",
+        "name": "prepare Stellio request",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entityOperations/upsert?options=update`;\n\nmsg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 480,
+        "wires": [
+            [
+                "a1c946c9a4229481"
+            ]
+        ]
+    },
+    {
+        "id": "a3ae30d5e2cd4afa",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "g": "18958834c5323352",
+        "name": "Stellio response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 560,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "a1c946c9a4229481",
+        "type": "http request",
+        "z": "50940b605fe0d135",
+        "g": "18958834c5323352",
+        "name": "POST",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 480,
+        "wires": [
+            [
+                "a3ae30d5e2cd4afa",
+                "64b1a1ff9f6f14af"
+            ]
+        ]
+    },
+    {
+        "id": "64b1a1ff9f6f14af",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "g": "18958834c5323352",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 550,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "d39d45b2f3cc835e",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "g": "18958834c5323352",
+        "name": "# items",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'n: ' & $count(msg.payload)",
+        "statusType": "jsonata",
+        "x": 500,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "9f08d12ea3b3c88e",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "18958834c5323352",
+        "name": "flatten",
+        "func": "msg.payload = msg.payload.flat()\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 360,
+        "wires": [
+            [
+                "661e9b913953ba69",
+                "d39d45b2f3cc835e"
+            ]
+        ]
+    },
+    {
+        "id": "0907d04275ebde7a",
+        "type": "inject",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "inject",
+        "props": [
+            {
+                "p": "timestamp",
+                "v": "",
+                "vt": "date"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 03 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 680,
+        "wires": [
+            [
+                "a4e4d8b358e5ab48",
+                "0f1dd9a3a8c0a9ac"
+            ]
+        ]
+    },
+    {
+        "id": "a4e4d8b358e5ab48",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 530,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "fa2f382b876ba2b9",
+        "type": "http request",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "GET locations",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 180,
+        "y": 840,
+        "wires": [
+            [
+                "2eeff5c2b04351b4",
+                "1ff92a421c068255",
+                "2e904d7692faf822"
+            ]
+        ]
+    },
+    {
+        "id": "2eeff5c2b04351b4",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "OCDB response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 520,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "c52f32bc1de5cde5",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "build JSON-LD",
+        "func": "let observedAt = new Date(msg.timestamp).toISOString()\n\nfunction property(value) {\n    return {\n        type: \"Property\",\n        value,\n        observedAt,\n    }\n}\n\nfunction point({lon, lat}) {\n    return {\n        type: \"GeoProperty\",\n        value: {\n            type: \"Point\",\n            coordinates: [lon, lat],\n        },\n        observedAt,\n    }\n}\n\nmsg.payload.map(x => {\n    x.id = x.id.toString();\n})\n\nconst observations = msg.payload.map(x => (\n    x.evses.map( y => ({\n        id: `urn:sdm:EVChargingStation:mobidata:${y.uid}`,\n        type: 'EVChargingStation',\n        alternateName: property(y.uid),\n        address: property({\n            addressCountry: x.country,\n            addressRegion: x.state || null,\n            addressLocality: x.city,\n            streetAddress: x.address,\n            postalCode: x.postal_code,\n        }),\n        dataProvider: property(`mobidata, ${x.source}`),\n        location: point({\n            lat: Number(x.coordinates.lat),\n            lon: Number(x.coordinates.lon),\n            }),\n        operator: property(x.operator.name),\n        observationDateTime: property(y.last_updated),\n        socketNumber: property(y.connectors.length),\n        socketType: property(y.connectors.map(x => x.standard)),\n        powerConsumption: property(Math.max(...y.connectors.map(x => x.max_electric_power))),\n        // raw_ocpdb_item: property(x),\n        '@context': [],\n    }))\n)).flat();\n\nreturn {\n    payload : observations,\n    timestamp: msg.timestamp,\n    }",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 1040,
+        "wires": [
+            [
+                "4fd2d351117d5831",
+                "9e359282cc553c91",
+                "58609bb0f309d986",
+                "f57c142e46f44772"
+            ]
+        ]
+    },
+    {
+        "id": "4fd2d351117d5831",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "first JSON-LD",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload[0]",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "0f1dd9a3a8c0a9ac",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "set msg.base_url and msg.path",
+        "func": "msg.base_url = 'https://api.mobidata-bw.de/ocpdb'\nmsg.path = '/api/public/v1/locations'\nmsg.path += '?lon=9.14&lat=47.7&radius=7920'\n\n// test pagination with\n// msg.path += '?lon=9.14&lat=47.7&radius=7920&limit=10'\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 740,
+        "wires": [
+            [
+                "878584f7de3888a0"
+            ]
+        ]
+    },
+    {
+        "id": "1ff92a421c068255",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "pagination: continue",
+        "func": "if (msg.payload.hasOwnProperty('next_path')) {\n    msg.path = msg.payload['next_path']\n    return msg\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 840,
+        "wires": [
+            [
+                "878584f7de3888a0"
+            ]
+        ]
+    },
+    {
+        "id": "878584f7de3888a0",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "set msg.url",
+        "func": "msg.url = msg.base_url + msg.path\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 740,
+        "wires": [
+            [
+                "fa2f382b876ba2b9"
+            ]
+        ]
+    },
+    {
+        "id": "aefc57e4e237a029",
+        "type": "join",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 170,
+        "y": 960,
+        "wires": [
+            [
+                "cc55337bcbc6863d"
+            ]
+        ]
+    },
+    {
+        "id": "2e904d7692faf822",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "pagination: prep join",
+        "func": "if (!msg.payload.hasOwnProperty('next_path')) {\n    msg.complete = true;\n}\nmsg.payload = msg.payload.items\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 900,
+        "wires": [
+            [
+                "aefc57e4e237a029"
+            ]
+        ]
+    },
+    {
+        "id": "9e359282cc553c91",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "prepare Stellio request",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entityOperations/upsert?options=update`;\n\nmsg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 1140,
+        "wires": [
+            [
+                "b0eaedb9ee95fd31"
+            ]
+        ]
+    },
+    {
+        "id": "0483fbd63df27657",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "Stellio response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 560,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "b0eaedb9ee95fd31",
+        "type": "http request",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "POST",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 1140,
+        "wires": [
+            [
+                "0483fbd63df27657",
+                "07920faaf573d8bd"
+            ]
+        ]
+    },
+    {
+        "id": "07920faaf573d8bd",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 550,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "17346f7fabb649dc",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "# locations",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'n: ' & $count(msg.payload)",
+        "statusType": "jsonata",
+        "x": 510,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "cc55337bcbc6863d",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "flatten",
+        "func": "msg.payload = msg.payload.flat()\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 960,
+        "wires": [
+            [
+                "c52f32bc1de5cde5",
+                "17346f7fabb649dc"
+            ]
+        ]
+    },
+    {
+        "id": "58609bb0f309d986",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "g": "2c212039c596ad4f",
+        "name": "# stations",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'n: ' & $count(msg.payload)",
+        "statusType": "jsonata",
+        "x": 500,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "3081c1c5159b8ff1",
+        "type": "inject",
+        "z": "50940b605fe0d135",
+        "g": "1edfe0b06c1b04db",
+        "name": "set id",
+        "props": [
+            {
+                "p": "id",
+                "v": "urn:sdm:EVChargingStation:mobidata:BNETZA*2f3f146a944055391caf*0*2",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 810,
+        "y": 680,
+        "wires": [
+            [
+                "93ef6e8bd3e995dc",
+                "6b735c1d6fc275a0"
+            ]
+        ]
+    },
+    {
+        "id": "a7419744e0843ad5",
+        "type": "http request",
+        "z": "50940b605fe0d135",
+        "g": "1edfe0b06c1b04db",
+        "name": "GET",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1170,
+        "y": 680,
+        "wires": [
+            [
+                "82747105a7c9d6e5"
+            ]
+        ]
+    },
+    {
+        "id": "93ef6e8bd3e995dc",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "1edfe0b06c1b04db",
+        "name": "prepare request",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entities/${msg.id}`;\n\nmsg.headers = {};\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 680,
+        "wires": [
+            [
+                "a7419744e0843ad5"
+            ]
+        ]
+    },
+    {
+        "id": "82747105a7c9d6e5",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "g": "1edfe0b06c1b04db",
+        "name": "Stellio entity",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 1370,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "0b7bc51b6926fbbd",
+        "type": "http request",
+        "z": "50940b605fe0d135",
+        "g": "1edfe0b06c1b04db",
+        "name": "GET",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1170,
+        "y": 740,
+        "wires": [
+            [
+                "055be2d5c94e15c1"
+            ]
+        ]
+    },
+    {
+        "id": "6b735c1d6fc275a0",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "g": "1edfe0b06c1b04db",
+        "name": "prepare request",
+        "func": "const stellio = env.get(\"STELLIO_API_URL\") + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/temporal/entities/${msg.id}`;\n\nmsg.headers = {};\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 740,
+        "wires": [
+            [
+                "0b7bc51b6926fbbd"
+            ]
+        ]
+    },
+    {
+        "id": "055be2d5c94e15c1",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "g": "1edfe0b06c1b04db",
+        "name": "Stellio entity history",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 1390,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "989241cb6a0e7550",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "name": "prepare Stellio request Operator DB",
+        "func": "const stellio = \"http://stellio-stellio-context-broker-api-gateway.prd-ngsi-stack.svc.cluster.local:8080\" + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entityOperations/upsert?options=update`;\n\nmsg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 440,
+        "wires": [
+            [
+                "fef4f8bb196401aa"
+            ]
+        ]
+    },
+    {
+        "id": "cb0dd4960cc5a35f",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "name": "Stellio response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 1160,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "fef4f8bb196401aa",
+        "type": "http request",
+        "z": "50940b605fe0d135",
+        "name": "POST",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 990,
+        "y": 500,
+        "wires": [
+            [
+                "cb0dd4960cc5a35f",
+                "3113f054fc1a77ae"
+            ]
+        ]
+    },
+    {
+        "id": "3113f054fc1a77ae",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 1150,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "f57c142e46f44772",
+        "type": "function",
+        "z": "50940b605fe0d135",
+        "name": "prepare Stellio request Operator DB",
+        "func": "const stellio = \"http://stellio-stellio-context-broker-api-gateway.prd-ngsi-stack.svc.cluster.local:8080\" + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entityOperations/upsert?options=update`;\n\nmsg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1160,
+        "wires": [
+            [
+                "f9a443d9567236aa"
+            ]
+        ]
+    },
+    {
+        "id": "2077d0be394dac2a",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "name": "Stellio response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 1160,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "f9a443d9567236aa",
+        "type": "http request",
+        "z": "50940b605fe0d135",
+        "name": "POST",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 990,
+        "y": 1220,
+        "wires": [
+            [
+                "2077d0be394dac2a",
+                "5ad4f05eebd98cb4"
+            ]
+        ]
+    },
+    {
+        "id": "5ad4f05eebd98cb4",
+        "type": "debug",
+        "z": "50940b605fe0d135",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 1150,
+        "y": 1240,
+        "wires": []
+    }
+]
