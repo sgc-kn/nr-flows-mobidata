@@ -40,14 +40,6 @@
         "env": []
     },
     {
-        "id": "5b9973dc860d8245",
-        "type": "tab",
-        "label": "[test] Credentials",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "67bf633c0fe1bc4a",
         "type": "group",
         "z": "e239f32639a28b7a",
@@ -4196,56 +4188,5 @@
         "x": 1150,
         "y": 1240,
         "wires": []
-    },
-    {
-        "id": "4cb47d7380dbe0c8",
-        "type": "http request",
-        "z": "5b9973dc860d8245",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "basic",
-        "senderr": false,
-        "headers": [],
-        "x": 310,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "9214ecd88fec1b5f",
-        "type": "inject",
-        "z": "5b9973dc860d8245",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 180,
-        "y": 160,
-        "wires": [
-            [
-                "4cb47d7380dbe0c8"
-            ]
-        ]
     }
 ]
