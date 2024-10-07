@@ -56,6 +56,14 @@
         "env": []
     },
     {
+        "id": "d4f0e7402fe799f8",
+        "type": "tab",
+        "label": "[PostgREST, sdm] Ladesäulen",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "67bf633c0fe1bc4a",
         "type": "group",
         "z": "e239f32639a28b7a",
@@ -469,10 +477,10 @@
         "nodes": [
             "54f3230f11be7ae4",
             "626c24a59ef1b75a",
+            "76b6d695d28b4d5c",
             "04873f6a5ca52ad7",
             "44131bee2c1ee3e7",
-            "9021453973b1e990",
-            "76b6d695d28b4d5c"
+            "9021453973b1e990"
         ],
         "x": 48,
         "y": 39,
@@ -569,6 +577,119 @@
         "y": 119,
         "w": 572,
         "h": 342
+    },
+    {
+        "id": "6fdf9b96deeaa488",
+        "type": "group",
+        "z": "d4f0e7402fe799f8",
+        "name": "Database Schema",
+        "style": {
+            "fill": "#ffffbf",
+            "label": true
+        },
+        "nodes": [
+            "89c222043f2beeb7",
+            "f9fe04d82f31e645",
+            "c5b2abce3d597894",
+            "b159a68fe0144d09",
+            "899a86ccce65c327",
+            "af6dd385ea8a5a80",
+            "a30ba77131584ae7",
+            "6544352628596478"
+        ],
+        "x": 28,
+        "y": 773,
+        "w": 1298,
+        "h": 248
+    },
+    {
+        "id": "6544352628596478",
+        "type": "group",
+        "z": "d4f0e7402fe799f8",
+        "g": "6fdf9b96deeaa488",
+        "name": "",
+        "style": {
+            "fill": "#ffbfbf",
+            "label": true
+        },
+        "nodes": [
+            "5530dcf69c72f409",
+            "35a60496d4fa38a8",
+            "18775d72311df69e"
+        ],
+        "x": 54,
+        "y": 799,
+        "w": 572,
+        "h": 142
+    },
+    {
+        "id": "2677aefc9d51833a",
+        "type": "group",
+        "z": "d4f0e7402fe799f8",
+        "name": "Update Job",
+        "style": {
+            "fill": "#bfdbef",
+            "label": true
+        },
+        "nodes": [
+            "7a1229b9f11f8d4b",
+            "5b0be50bf1cf0fa0",
+            "77340e0899cd190b",
+            "d25d17ad11926b49",
+            "76514695a5980861",
+            "d8327e5b86c46b16"
+        ],
+        "x": 28,
+        "y": 19,
+        "w": 624,
+        "h": 728
+    },
+    {
+        "id": "77340e0899cd190b",
+        "type": "group",
+        "z": "d4f0e7402fe799f8",
+        "g": "2677aefc9d51833a",
+        "name": "paginated get",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "8479727918ef6376",
+            "9a75f0cc0e2a8e7e",
+            "fb394da75935ee24",
+            "64c4f1734b9c8a98",
+            "d7852f33a08e8887",
+            "a75a5e6cb9a2ec88",
+            "e5dfd2ec225221c1",
+            "fe0b54a98c6bf6f2",
+            "c5171d51c1cf97ec",
+            "d21418b37884a05b"
+        ],
+        "x": 54,
+        "y": 99,
+        "w": 572,
+        "h": 342
+    },
+    {
+        "id": "d8327e5b86c46b16",
+        "type": "group",
+        "z": "d4f0e7402fe799f8",
+        "g": "2677aefc9d51833a",
+        "name": "Submit to database ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e29eb25a802a9814",
+            "8f0d6a72787a408f",
+            "2e8fa978dd2ec7e4",
+            "25c57deef636d97d",
+            "be98aa5e1e4e3b03"
+        ],
+        "x": 54,
+        "y": 519,
+        "w": 532,
+        "h": 202
     },
     {
         "id": "8dde99fbf1d37fd5",
@@ -4460,7 +4581,7 @@
         "z": "3ea68b5de28cd37e",
         "g": "f31b7352a85a08b3",
         "name": "Define Statements (CREATE TABLE, ...)",
-        "func": "msg.payload = []\nmsg.payload[0] = `\nCREATE TABLE mobidata_gbfs (\n    timestamp timestamptz NOT NULL,\n    topic text NOT NULL,\n    feed jsonb NOT NULL,\n    gbfs jsonb NOT NULL\n)\n`;\n\nmsg.payload[1] = `SELECT create_hypertable('mobidata_gbfs', 'timestamp')`;\n\nreturn msg;",
+        "func": "msg.payload = []\nmsg.payload[0] = `\nCREATE TABLE mobidata_gbfs (\n    time timestamptz NOT NULL,\n    topic text NOT NULL,\n    feed jsonb NOT NULL,\n    gbfs jsonb NOT NULL\n)\n`;\n\nmsg.payload[1] = `SELECT create_hypertable('mobidata_gbfs', 'time')`;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4635,7 +4756,8 @@
         "y": 1080,
         "wires": [
             [
-                "e17723de69b8687a"
+                "e17723de69b8687a",
+                "e0b623ba937fb12c"
             ]
         ]
     },
@@ -5089,7 +5211,7 @@
         "z": "3ea68b5de28cd37e",
         "g": "6d159c2b70f936e3",
         "name": "build row",
-        "func": "msg.payload = {\n    'timestamp': new Date(msg.timestamp).toISOString(),\n    'topic': msg.info.topic,\n    'feed': msg.info.feed,\n    'gbfs': msg.payload,\n}\n\nreturn msg;",
+        "func": "msg.payload = {\n    'time': new Date(msg.timestamp).toISOString(),\n    'topic': msg.info.topic,\n    'feed': msg.info.feed,\n    'gbfs': msg.payload,\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -5302,7 +5424,7 @@
         "z": "5043212b2379e71b",
         "g": "30013ccc1f412d72",
         "name": "build payload",
-        "func": "return {\n    payload: {\n        timestamp: new Date(msg.timestamp).toISOString(),\n        url: msg.first_url,\n        data: msg.payload,\n    },\n    timestamp: msg.timestamp,\n}",
+        "func": "return {\n    payload: {\n        time: new Date(msg.timestamp).toISOString(),\n        url: msg.first_url,\n        data: msg.payload,\n    },\n    timestamp: msg.timestamp,\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -5478,7 +5600,7 @@
         "z": "5043212b2379e71b",
         "g": "f0ecc985a2fab29a",
         "name": "Define Statements (CREATE TABLE, ...)",
-        "func": "msg.payload = []\nmsg.payload[0] = `\nCREATE TABLE mobidata_ocpdb (\n    timestamp timestamptz NOT NULL,\n    url text NOT NULL,\n    data jsonb NOT NULL\n)\n`;\n\nmsg.payload[1] = `SELECT create_hypertable('mobidata_ocpdb', 'timestamp')`;\n\nreturn msg;",
+        "func": "msg.payload = []\nmsg.payload[0] = `\nCREATE TABLE mobidata_ocpdb (\n    time timestamptz NOT NULL,\n    url text NOT NULL,\n    data jsonb NOT NULL\n)\n`;\n\nmsg.payload[1] = `SELECT create_hypertable('mobidata_ocpdb', 'time')`;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -5653,7 +5775,8 @@
         "y": 900,
         "wires": [
             [
-                "f449dc07a6445fd1"
+                "f449dc07a6445fd1",
+                "97e0d039c27ccc7c"
             ]
         ]
     },
@@ -5819,6 +5942,622 @@
         "statusType": "jsonata",
         "x": 490,
         "y": 700,
+        "wires": []
+    },
+    {
+        "id": "89c222043f2beeb7",
+        "type": "function",
+        "z": "d4f0e7402fe799f8",
+        "g": "6fdf9b96deeaa488",
+        "name": "Define Statements (CREATE TABLE, ...)",
+        "func": "msg.payload = []\nmsg.payload[0] = `\nCREATE TABLE mobidata_evchargingstations (\n    time timestamptz NOT NULL,\n    id text NOT NULL,\n    address jsonb NOT NULL,\n    \"dataProvider\" text NOT NULL,\n    location geometry NOT NULL,\n    operator text NOT NULL,\n    \"observationDateTime\" timestamptz NOT NULL,\n    \"socketNumber\" int NOT NULL,\n    \"socketType\" jsonb NOT NULL,\n    \"powerConsumption\" double precision NOT NULL\n)\n`;\n\nmsg.payload[1] = `SELECT create_hypertable('mobidata_evchargingstations', 'time')`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 980,
+        "wires": [
+            [
+                "f9fe04d82f31e645"
+            ]
+        ]
+    },
+    {
+        "id": "f9fe04d82f31e645",
+        "type": "split",
+        "z": "d4f0e7402fe799f8",
+        "g": "6fdf9b96deeaa488",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 670,
+        "y": 980,
+        "wires": [
+            [
+                "c5b2abce3d597894"
+            ]
+        ]
+    },
+    {
+        "id": "c5b2abce3d597894",
+        "type": "function",
+        "z": "d4f0e7402fe799f8",
+        "g": "6fdf9b96deeaa488",
+        "name": "Configure PostgREST request",
+        "func": "const postgrest = 'postgrest-service.prd-data-management-stack.svc.cluster.local:3000'\n\nmsg.method = 'POST';\nmsg.url = `${postgrest}/rpc/mgmt`;\nmsg.headers = {\n    'Content-Type': 'text/plain',\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 840,
+        "wires": [
+            [
+                "af6dd385ea8a5a80",
+                "b159a68fe0144d09"
+            ]
+        ]
+    },
+    {
+        "id": "b159a68fe0144d09",
+        "type": "debug",
+        "z": "d4f0e7402fe799f8",
+        "g": "6fdf9b96deeaa488",
+        "name": "Exec Statement",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "899a86ccce65c327",
+        "type": "inject",
+        "z": "d4f0e7402fe799f8",
+        "g": "6fdf9b96deeaa488",
+        "name": "create",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 980,
+        "wires": [
+            [
+                "89c222043f2beeb7"
+            ]
+        ]
+    },
+    {
+        "id": "af6dd385ea8a5a80",
+        "type": "http request",
+        "z": "d4f0e7402fe799f8",
+        "g": "6fdf9b96deeaa488",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 930,
+        "y": 920,
+        "wires": [
+            [
+                "a30ba77131584ae7"
+            ]
+        ]
+    },
+    {
+        "id": "a30ba77131584ae7",
+        "type": "debug",
+        "z": "d4f0e7402fe799f8",
+        "g": "6fdf9b96deeaa488",
+        "name": "Exec Response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 1200,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "5530dcf69c72f409",
+        "type": "function",
+        "z": "d4f0e7402fe799f8",
+        "g": "6544352628596478",
+        "name": "Define Statement (DROP TABLE)",
+        "func": "msg.payload = `DROP TABLE IF EXISTS mobidata_evchargingstations`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 840,
+        "wires": [
+            [
+                "c5b2abce3d597894"
+            ]
+        ]
+    },
+    {
+        "id": "35a60496d4fa38a8",
+        "type": "inject",
+        "z": "d4f0e7402fe799f8",
+        "g": "6544352628596478",
+        "name": "clean + recreate",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 180,
+        "y": 860,
+        "wires": [
+            [
+                "18775d72311df69e",
+                "5530dcf69c72f409"
+            ]
+        ]
+    },
+    {
+        "id": "18775d72311df69e",
+        "type": "delay",
+        "z": "d4f0e7402fe799f8",
+        "g": "6544352628596478",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 400,
+        "y": 900,
+        "wires": [
+            [
+                "89c222043f2beeb7"
+            ]
+        ]
+    },
+    {
+        "id": "7a1229b9f11f8d4b",
+        "type": "inject",
+        "z": "d4f0e7402fe799f8",
+        "g": "2677aefc9d51833a",
+        "name": "inject",
+        "props": [
+            {
+                "p": "timestamp",
+                "v": "",
+                "vt": "date"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 03 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "5b0be50bf1cf0fa0",
+                "fb394da75935ee24"
+            ]
+        ]
+    },
+    {
+        "id": "5b0be50bf1cf0fa0",
+        "type": "debug",
+        "z": "d4f0e7402fe799f8",
+        "g": "2677aefc9d51833a",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 530,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "8479727918ef6376",
+        "type": "http request",
+        "z": "d4f0e7402fe799f8",
+        "g": "77340e0899cd190b",
+        "name": "GET locations",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "9a75f0cc0e2a8e7e",
+                "64c4f1734b9c8a98",
+                "e5dfd2ec225221c1"
+            ]
+        ]
+    },
+    {
+        "id": "9a75f0cc0e2a8e7e",
+        "type": "debug",
+        "z": "d4f0e7402fe799f8",
+        "g": "77340e0899cd190b",
+        "name": "OCDB response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 500,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "fb394da75935ee24",
+        "type": "function",
+        "z": "d4f0e7402fe799f8",
+        "g": "77340e0899cd190b",
+        "name": "set msg.base_url and msg.path",
+        "func": "msg.base_url = 'https://api.mobidata-bw.de/ocpdb'\nmsg.path = '/api/public/v1/locations'\nmsg.path += '?lon=9.14&lat=47.7&radius=7920'\n\nmsg.first_url = msg.base_url + msg.path\n\n// test pagination with\n// msg.path += '?lon=9.14&lat=47.7&radius=7920&limit=10'\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 140,
+        "wires": [
+            [
+                "d7852f33a08e8887"
+            ]
+        ]
+    },
+    {
+        "id": "64c4f1734b9c8a98",
+        "type": "function",
+        "z": "d4f0e7402fe799f8",
+        "g": "77340e0899cd190b",
+        "name": "pagination: continue",
+        "func": "if (msg.payload.hasOwnProperty('next_path')) {\n    msg.path = msg.payload['next_path']\n    return msg\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 240,
+        "wires": [
+            [
+                "d7852f33a08e8887"
+            ]
+        ]
+    },
+    {
+        "id": "d7852f33a08e8887",
+        "type": "function",
+        "z": "d4f0e7402fe799f8",
+        "g": "77340e0899cd190b",
+        "name": "set msg.url",
+        "func": "msg.url = msg.base_url + msg.path\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 140,
+        "wires": [
+            [
+                "8479727918ef6376"
+            ]
+        ]
+    },
+    {
+        "id": "a75a5e6cb9a2ec88",
+        "type": "join",
+        "z": "d4f0e7402fe799f8",
+        "g": "77340e0899cd190b",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 150,
+        "y": 360,
+        "wires": [
+            [
+                "fe0b54a98c6bf6f2"
+            ]
+        ]
+    },
+    {
+        "id": "e5dfd2ec225221c1",
+        "type": "function",
+        "z": "d4f0e7402fe799f8",
+        "g": "77340e0899cd190b",
+        "name": "pagination: prep join",
+        "func": "if (!msg.payload.hasOwnProperty('next_path')) {\n    msg.complete = true;\n}\nmsg.payload = msg.payload.items\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 300,
+        "wires": [
+            [
+                "a75a5e6cb9a2ec88"
+            ]
+        ]
+    },
+    {
+        "id": "fe0b54a98c6bf6f2",
+        "type": "function",
+        "z": "d4f0e7402fe799f8",
+        "g": "77340e0899cd190b",
+        "name": "flatten",
+        "func": "msg.payload = msg.payload.flat()\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 360,
+        "wires": [
+            [
+                "d21418b37884a05b",
+                "c5171d51c1cf97ec",
+                "d25d17ad11926b49"
+            ]
+        ]
+    },
+    {
+        "id": "c5171d51c1cf97ec",
+        "type": "debug",
+        "z": "d4f0e7402fe799f8",
+        "g": "77340e0899cd190b",
+        "name": "first item",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload[0]",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "d21418b37884a05b",
+        "type": "debug",
+        "z": "d4f0e7402fe799f8",
+        "g": "77340e0899cd190b",
+        "name": "# items",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'n: ' & $count(msg.payload)",
+        "statusType": "jsonata",
+        "x": 480,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "d25d17ad11926b49",
+        "type": "function",
+        "z": "d4f0e7402fe799f8",
+        "g": "2677aefc9d51833a",
+        "name": "build payload",
+        "func": "function point({lon, lat}) {\n    return `SRID=4326;POINT(${lon} ${lat})`\n}\n\nconst observations = msg.payload.map(x => (\n    x.evses.map( y => ({\n        time: new Date(msg.timestamp).toISOString(),\n        id: y.uid,\n        address: {\n            addressCountry: x.country,\n            addressRegion: x.state || null,\n            addressLocality: x.city,\n            streetAddress: x.address,\n            postalCode: x.postal_code,\n        },\n        dataProvider: `mobidata, ${x.source}`,\n        location: point({\n            lat: Number(x.coordinates.lat),\n            lon: Number(x.coordinates.lon),\n            }),\n        operator: x.operator.name,\n        observationDateTime: y.last_updated,\n        socketNumber: y.connectors.length,\n        socketType: y.connectors.map(x => x.standard),\n        powerConsumption: Math.max(...y.connectors.map(x => x.max_electric_power)),\n    }))\n)).flat();\n\nreturn {\n    payload : observations,\n    timestamp: msg.timestamp,\n    }",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 150,
+        "y": 480,
+        "wires": [
+            [
+                "76514695a5980861",
+                "e29eb25a802a9814"
+            ]
+        ]
+    },
+    {
+        "id": "76514695a5980861",
+        "type": "debug",
+        "z": "d4f0e7402fe799f8",
+        "g": "2677aefc9d51833a",
+        "name": "Payload[0]",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload[0]",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "e29eb25a802a9814",
+        "type": "function",
+        "z": "d4f0e7402fe799f8",
+        "g": "d8327e5b86c46b16",
+        "name": "Configure PostgREST request",
+        "func": "const postgrest = 'postgrest-service.prd-data-management-stack.svc.cluster.local:3000'\n\nmsg.method = 'POST';\nmsg.url = `${postgrest}/mobidata_evchargingstations`;\nmsg.headers = {\n    'Content-Type': 'application/json',\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 560,
+        "wires": [
+            [
+                "2e8fa978dd2ec7e4",
+                "8f0d6a72787a408f"
+            ]
+        ]
+    },
+    {
+        "id": "8f0d6a72787a408f",
+        "type": "debug",
+        "z": "d4f0e7402fe799f8",
+        "g": "d8327e5b86c46b16",
+        "name": "Payload",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "2e8fa978dd2ec7e4",
+        "type": "http request",
+        "z": "d4f0e7402fe799f8",
+        "g": "d8327e5b86c46b16",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 210,
+        "y": 640,
+        "wires": [
+            [
+                "25c57deef636d97d",
+                "be98aa5e1e4e3b03"
+            ]
+        ]
+    },
+    {
+        "id": "25c57deef636d97d",
+        "type": "debug",
+        "z": "d4f0e7402fe799f8",
+        "g": "d8327e5b86c46b16",
+        "name": "Response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 460,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "be98aa5e1e4e3b03",
+        "type": "debug",
+        "z": "d4f0e7402fe799f8",
+        "g": "d8327e5b86c46b16",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 470,
+        "y": 680,
         "wires": []
     }
 ]
