@@ -40,6 +40,14 @@
         "env": []
     },
     {
+        "id": "3ea68b5de28cd37e",
+        "type": "tab",
+        "label": "[PostgREST] GBFS",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "67bf633c0fe1bc4a",
         "type": "group",
         "z": "e239f32639a28b7a",
@@ -304,6 +312,142 @@
         "y": 639,
         "w": 812,
         "h": 142
+    },
+    {
+        "id": "f31b7352a85a08b3",
+        "type": "group",
+        "z": "3ea68b5de28cd37e",
+        "name": "Database Schema",
+        "style": {
+            "fill": "#ffffbf",
+            "label": true
+        },
+        "nodes": [
+            "b04218a35be66552",
+            "85341e6bc5218f39",
+            "29d336ad9ebed4aa",
+            "87e1c238ba747f8a",
+            "1fbe6c93d90c0b79",
+            "d5c0f8bf763fd2a7",
+            "4ac404eb74495804",
+            "da2c1bbb8bc09422"
+        ],
+        "x": 28,
+        "y": 993,
+        "w": 1298,
+        "h": 248
+    },
+    {
+        "id": "da2c1bbb8bc09422",
+        "type": "group",
+        "z": "3ea68b5de28cd37e",
+        "g": "f31b7352a85a08b3",
+        "name": "",
+        "style": {
+            "fill": "#ffbfbf",
+            "label": true
+        },
+        "nodes": [
+            "e0b623ba937fb12c",
+            "0d05b3f021081b93",
+            "e17723de69b8687a"
+        ],
+        "x": 54,
+        "y": 1019,
+        "w": 572,
+        "h": 142
+    },
+    {
+        "id": "8384c06ee6c789f5",
+        "type": "group",
+        "z": "3ea68b5de28cd37e",
+        "name": "Update Job",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true
+        },
+        "nodes": [
+            "b8669da2f14aacf2",
+            "35988d545ebb4bab",
+            "44e9de72054ecb19",
+            "674e01e669cc47b5",
+            "6d159c2b70f936e3",
+            "41645733b4592f63"
+        ],
+        "x": 34,
+        "y": 39,
+        "w": 858,
+        "h": 928
+    },
+    {
+        "id": "674e01e669cc47b5",
+        "type": "group",
+        "z": "3ea68b5de28cd37e",
+        "g": "8384c06ee6c789f5",
+        "name": "find GBFS feeds for each topic",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "725e98ee40419995",
+            "586cd0e345ed2228",
+            "eb0dedc7940396dc",
+            "2474dad97a381703",
+            "d1b850504843013b",
+            "3cd3aeebb6972223",
+            "1896a347abfeaf77",
+            "8e317953c6fb8245",
+            "f0d28104061b252b"
+        ],
+        "x": 74,
+        "y": 139,
+        "w": 792,
+        "h": 202
+    },
+    {
+        "id": "6d159c2b70f936e3",
+        "type": "group",
+        "z": "3ea68b5de28cd37e",
+        "g": "8384c06ee6c789f5",
+        "name": "download each feed and create database row",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "8d0159e619f36512",
+            "fec46b05d49585f9",
+            "2334537c7b5cf2e0",
+            "c67906894c4bbfb8",
+            "686bdfbb95377093",
+            "aea905b538edc5ab",
+            "45f3571c533a5ee1",
+            "2034918cac6438f9"
+        ],
+        "x": 74,
+        "y": 379,
+        "w": 592,
+        "h": 322
+    },
+    {
+        "id": "41645733b4592f63",
+        "type": "group",
+        "z": "3ea68b5de28cd37e",
+        "g": "8384c06ee6c789f5",
+        "name": "Submit rows to database ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "00fe3a687c00620c",
+            "70847b2baff0c73d",
+            "93e70b2a358e345e",
+            "e877cd13dd0095ee",
+            "52635ab420ac9b57"
+        ],
+        "x": 74,
+        "y": 739,
+        "w": 532,
+        "h": 202
     },
     {
         "id": "8dde99fbf1d37fd5",
@@ -1641,7 +1785,7 @@
         "type": "debug",
         "z": "e239f32639a28b7a",
         "name": "Stellio response",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -2172,7 +2316,7 @@
         "type": "debug",
         "z": "130060434246f931",
         "name": "Stellio response",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -2914,7 +3058,7 @@
         "type": "debug",
         "z": "279efa75137f8875",
         "name": "Stellio response",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -4056,7 +4200,7 @@
         "type": "debug",
         "z": "50940b605fe0d135",
         "name": "Stellio response",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -4135,7 +4279,7 @@
         "type": "debug",
         "z": "50940b605fe0d135",
         "name": "Stellio response",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -4187,6 +4331,758 @@
         "statusType": "jsonata",
         "x": 1150,
         "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "b04218a35be66552",
+        "type": "function",
+        "z": "3ea68b5de28cd37e",
+        "g": "f31b7352a85a08b3",
+        "name": "Define Statements (CREATE TABLE, ...)",
+        "func": "msg.payload = []\nmsg.payload[0] = `\nCREATE TABLE mobidata_gbfs (\n    timestamp timestamptz NOT NULL,\n    topic text NOT NULL,\n    feed jsonb NOT NULL,\n    gbfs jsonb NOT NULL\n)\n`;\n\nmsg.payload[1] = `SELECT create_hypertable('mobidata_gbfs', 'timestamp')`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 1200,
+        "wires": [
+            [
+                "85341e6bc5218f39"
+            ]
+        ]
+    },
+    {
+        "id": "85341e6bc5218f39",
+        "type": "split",
+        "z": "3ea68b5de28cd37e",
+        "g": "f31b7352a85a08b3",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 670,
+        "y": 1200,
+        "wires": [
+            [
+                "29d336ad9ebed4aa"
+            ]
+        ]
+    },
+    {
+        "id": "29d336ad9ebed4aa",
+        "type": "function",
+        "z": "3ea68b5de28cd37e",
+        "g": "f31b7352a85a08b3",
+        "name": "Configure PostgREST request",
+        "func": "const postgrest = 'postgrest-service.prd-data-management-stack.svc.cluster.local:3000'\n\nmsg.method = 'POST';\nmsg.url = `${postgrest}/rpc/mgmt`;\nmsg.headers = {\n    'Content-Type': 'text/plain',\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 1060,
+        "wires": [
+            [
+                "d5c0f8bf763fd2a7",
+                "87e1c238ba747f8a"
+            ]
+        ]
+    },
+    {
+        "id": "87e1c238ba747f8a",
+        "type": "debug",
+        "z": "3ea68b5de28cd37e",
+        "g": "f31b7352a85a08b3",
+        "name": "Exec Statement",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "1fbe6c93d90c0b79",
+        "type": "inject",
+        "z": "3ea68b5de28cd37e",
+        "g": "f31b7352a85a08b3",
+        "name": "create",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 1200,
+        "wires": [
+            [
+                "b04218a35be66552"
+            ]
+        ]
+    },
+    {
+        "id": "d5c0f8bf763fd2a7",
+        "type": "http request",
+        "z": "3ea68b5de28cd37e",
+        "g": "f31b7352a85a08b3",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 930,
+        "y": 1140,
+        "wires": [
+            [
+                "4ac404eb74495804"
+            ]
+        ]
+    },
+    {
+        "id": "4ac404eb74495804",
+        "type": "debug",
+        "z": "3ea68b5de28cd37e",
+        "g": "f31b7352a85a08b3",
+        "name": "Exec Response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 1200,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "e0b623ba937fb12c",
+        "type": "function",
+        "z": "3ea68b5de28cd37e",
+        "g": "da2c1bbb8bc09422",
+        "name": "Define Statement (DROP TABLE)",
+        "func": "msg.payload = `DROP TABLE IF EXISTS mobidata_gbfs`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 1060,
+        "wires": [
+            [
+                "29d336ad9ebed4aa"
+            ]
+        ]
+    },
+    {
+        "id": "0d05b3f021081b93",
+        "type": "inject",
+        "z": "3ea68b5de28cd37e",
+        "g": "da2c1bbb8bc09422",
+        "name": "clean + recreate",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 180,
+        "y": 1080,
+        "wires": [
+            [
+                "e17723de69b8687a"
+            ]
+        ]
+    },
+    {
+        "id": "e17723de69b8687a",
+        "type": "delay",
+        "z": "3ea68b5de28cd37e",
+        "g": "da2c1bbb8bc09422",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 400,
+        "y": 1120,
+        "wires": [
+            [
+                "b04218a35be66552"
+            ]
+        ]
+    },
+    {
+        "id": "b8669da2f14aacf2",
+        "type": "inject",
+        "z": "3ea68b5de28cd37e",
+        "g": "8384c06ee6c789f5",
+        "name": "inject",
+        "props": [
+            {
+                "p": "timestamp",
+                "v": "",
+                "vt": "date"
+            },
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload[0]",
+                "v": "nextbike_kk",
+                "vt": "str"
+            },
+            {
+                "p": "payload[1]",
+                "v": "zeus_konstanz",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "*/15 0-23 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "35988d545ebb4bab",
+                "eb0dedc7940396dc"
+            ]
+        ]
+    },
+    {
+        "id": "35988d545ebb4bab",
+        "type": "debug",
+        "z": "3ea68b5de28cd37e",
+        "g": "8384c06ee6c789f5",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 590,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "44e9de72054ecb19",
+        "type": "comment",
+        "z": "3ea68b5de28cd37e",
+        "g": "8384c06ee6c789f5",
+        "name": "<-- define GBFS topics here",
+        "info": "",
+        "x": 360,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "725e98ee40419995",
+        "type": "http request",
+        "z": "3ea68b5de28cd37e",
+        "g": "674e01e669cc47b5",
+        "name": "GET feed list",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 240,
+        "wires": [
+            [
+                "3cd3aeebb6972223"
+            ]
+        ]
+    },
+    {
+        "id": "586cd0e345ed2228",
+        "type": "debug",
+        "z": "3ea68b5de28cd37e",
+        "g": "674e01e669cc47b5",
+        "name": "GBFS feeds",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 750,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "eb0dedc7940396dc",
+        "type": "split",
+        "z": "3ea68b5de28cd37e",
+        "g": "674e01e669cc47b5",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "2474dad97a381703"
+            ]
+        ]
+    },
+    {
+        "id": "2474dad97a381703",
+        "type": "change",
+        "z": "3ea68b5de28cd37e",
+        "g": "674e01e669cc47b5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gbfs_topic",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 180,
+        "wires": [
+            [
+                "d1b850504843013b"
+            ]
+        ]
+    },
+    {
+        "id": "d1b850504843013b",
+        "type": "function",
+        "z": "3ea68b5de28cd37e",
+        "g": "674e01e669cc47b5",
+        "name": "prepare req",
+        "func": "msg.url = `https://api.mobidata-bw.de/sharing/gbfs/v2/${msg.gbfs_topic}/gbfs`;\nmsg.payload = '';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 240,
+        "wires": [
+            [
+                "725e98ee40419995"
+            ]
+        ]
+    },
+    {
+        "id": "3cd3aeebb6972223",
+        "type": "function",
+        "z": "3ea68b5de28cd37e",
+        "g": "674e01e669cc47b5",
+        "name": "read feed list",
+        "func": "const first_lang = Object.keys(msg.payload.data)[0];\n\nconst feeds = msg.payload.data[first_lang].feeds;\n\nmsg.payload = feeds.map(x => ({\n        feed : x,\n        topic: msg.gbfs_topic,\n}))\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 240,
+        "wires": [
+            [
+                "586cd0e345ed2228",
+                "1896a347abfeaf77"
+            ]
+        ]
+    },
+    {
+        "id": "1896a347abfeaf77",
+        "type": "join",
+        "z": "3ea68b5de28cd37e",
+        "g": "674e01e669cc47b5",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 150,
+        "y": 300,
+        "wires": [
+            [
+                "f0d28104061b252b"
+            ]
+        ]
+    },
+    {
+        "id": "8e317953c6fb8245",
+        "type": "debug",
+        "z": "3ea68b5de28cd37e",
+        "g": "674e01e669cc47b5",
+        "name": "first GBFS feed info",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload[0]",
+        "targetType": "msg",
+        "statusVal": "'n: ' & $count(msg.payload)",
+        "statusType": "jsonata",
+        "x": 610,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "f0d28104061b252b",
+        "type": "function",
+        "z": "3ea68b5de28cd37e",
+        "g": "674e01e669cc47b5",
+        "name": "flatten",
+        "func": "msg.payload = msg.payload.flat()\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 300,
+        "wires": [
+            [
+                "8e317953c6fb8245",
+                "2334537c7b5cf2e0"
+            ]
+        ]
+    },
+    {
+        "id": "8d0159e619f36512",
+        "type": "http request",
+        "z": "3ea68b5de28cd37e",
+        "g": "6d159c2b70f936e3",
+        "name": "GET",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 350,
+        "y": 480,
+        "wires": [
+            [
+                "fec46b05d49585f9",
+                "2034918cac6438f9"
+            ]
+        ]
+    },
+    {
+        "id": "fec46b05d49585f9",
+        "type": "debug",
+        "z": "3ea68b5de28cd37e",
+        "g": "6d159c2b70f936e3",
+        "name": "GBFS response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 540,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "2334537c7b5cf2e0",
+        "type": "split",
+        "z": "3ea68b5de28cd37e",
+        "g": "6d159c2b70f936e3",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 150,
+        "y": 420,
+        "wires": [
+            [
+                "c67906894c4bbfb8"
+            ]
+        ]
+    },
+    {
+        "id": "c67906894c4bbfb8",
+        "type": "function",
+        "z": "3ea68b5de28cd37e",
+        "g": "6d159c2b70f936e3",
+        "name": "prepare req",
+        "func": "msg.info = msg.payload;\nmsg.url = msg.payload.feed.url;\nmsg.payload = '';\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 480,
+        "wires": [
+            [
+                "8d0159e619f36512"
+            ]
+        ]
+    },
+    {
+        "id": "686bdfbb95377093",
+        "type": "join",
+        "z": "3ea68b5de28cd37e",
+        "g": "6d159c2b70f936e3",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 150,
+        "y": 600,
+        "wires": [
+            [
+                "aea905b538edc5ab",
+                "45f3571c533a5ee1",
+                "00fe3a687c00620c"
+            ]
+        ]
+    },
+    {
+        "id": "aea905b538edc5ab",
+        "type": "debug",
+        "z": "3ea68b5de28cd37e",
+        "g": "6d159c2b70f936e3",
+        "name": "first row",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload[0]",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "45f3571c533a5ee1",
+        "type": "debug",
+        "z": "3ea68b5de28cd37e",
+        "g": "6d159c2b70f936e3",
+        "name": "# rows",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'n: ' & $count(msg.payload)",
+        "statusType": "jsonata",
+        "x": 490,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "2034918cac6438f9",
+        "type": "function",
+        "z": "3ea68b5de28cd37e",
+        "g": "6d159c2b70f936e3",
+        "name": "build row",
+        "func": "msg.payload = {\n    'timestamp': new Date(msg.timestamp).toISOString(),\n    'topic': msg.info.topic,\n    'feed': msg.info.feed,\n    'gbfs': msg.payload,\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 540,
+        "wires": [
+            [
+                "686bdfbb95377093"
+            ]
+        ]
+    },
+    {
+        "id": "00fe3a687c00620c",
+        "type": "function",
+        "z": "3ea68b5de28cd37e",
+        "g": "41645733b4592f63",
+        "name": "Configure PostgREST request",
+        "func": "const postgrest = 'postgrest-service.prd-data-management-stack.svc.cluster.local:3000'\n\nmsg.method = 'POST';\nmsg.url = `${postgrest}/mobidata_gbfs`;\nmsg.headers = {\n    'Content-Type': 'application/json',\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 780,
+        "wires": [
+            [
+                "93e70b2a358e345e",
+                "70847b2baff0c73d"
+            ]
+        ]
+    },
+    {
+        "id": "70847b2baff0c73d",
+        "type": "debug",
+        "z": "3ea68b5de28cd37e",
+        "g": "41645733b4592f63",
+        "name": "Payload",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "93e70b2a358e345e",
+        "type": "http request",
+        "z": "3ea68b5de28cd37e",
+        "g": "41645733b4592f63",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 230,
+        "y": 860,
+        "wires": [
+            [
+                "e877cd13dd0095ee",
+                "52635ab420ac9b57"
+            ]
+        ]
+    },
+    {
+        "id": "e877cd13dd0095ee",
+        "type": "debug",
+        "z": "3ea68b5de28cd37e",
+        "g": "41645733b4592f63",
+        "name": "Response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 480,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "52635ab420ac9b57",
+        "type": "debug",
+        "z": "3ea68b5de28cd37e",
+        "g": "41645733b4592f63",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 490,
+        "y": 900,
         "wires": []
     }
 ]
