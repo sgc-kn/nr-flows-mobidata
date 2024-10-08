@@ -56,6 +56,14 @@
         "env": []
     },
     {
+        "id": "541e4b2a25f56a51",
+        "type": "tab",
+        "label": "[PostgREST, sdm] Zeus Roller",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "5043212b2379e71b",
         "type": "tab",
         "label": "[PostgREST, raw] Ladesäulen",
@@ -799,6 +807,97 @@
         "y": 119,
         "w": 692,
         "h": 708
+    },
+    {
+        "id": "efb71f06b1171c52",
+        "type": "group",
+        "z": "541e4b2a25f56a51",
+        "name": "Database Schema",
+        "style": {
+            "fill": "#ffffbf",
+            "label": true
+        },
+        "nodes": [
+            "32215c5b0fc9d5d5",
+            "4f7cf3b9655f1ec5",
+            "73150a2014f0be11",
+            "a4346a9f423f124f",
+            "5006b0df317b7aef",
+            "5295eb8826702f2d",
+            "3d549e073bd598bb",
+            "e9c3753ec70a3abe",
+            "c6ddd5234eff8889",
+            "87e46a1170e6d16c"
+        ],
+        "x": 48,
+        "y": 673,
+        "w": 1298,
+        "h": 248
+    },
+    {
+        "id": "5295eb8826702f2d",
+        "type": "group",
+        "z": "541e4b2a25f56a51",
+        "g": "efb71f06b1171c52",
+        "name": "",
+        "style": {
+            "fill": "#ffbfbf",
+            "label": true
+        },
+        "nodes": [
+            "7bcfd74f356855cd",
+            "98042903a531ade0",
+            "1ef0a435792ba31d"
+        ],
+        "x": 74,
+        "y": 699,
+        "w": 572,
+        "h": 142
+    },
+    {
+        "id": "7e108667b7b35e59",
+        "type": "group",
+        "z": "541e4b2a25f56a51",
+        "g": "c7a0987960efee3f",
+        "name": "Submit to database ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "27814809a4e3080e",
+            "68c3be2d139c8d13",
+            "e59b1fc3297be6d0",
+            "46917c46b25aa384",
+            "1070e397dc8bbe73"
+        ],
+        "x": 134,
+        "y": 419,
+        "w": 532,
+        "h": 202
+    },
+    {
+        "id": "c7a0987960efee3f",
+        "type": "group",
+        "z": "541e4b2a25f56a51",
+        "name": "Update Job",
+        "style": {
+            "fill": "#bfdbef",
+            "label": true
+        },
+        "nodes": [
+            "5ea21ab10b651e0d",
+            "92f457e2c0b75d30",
+            "874ee62094bc9501",
+            "10a722b62f7439b6",
+            "dc223cf83b756652",
+            "bad3a5ee14b9abed",
+            "b889d8ea027ab160",
+            "7e108667b7b35e59"
+        ],
+        "x": 54,
+        "y": 119,
+        "w": 638,
+        "h": 528
     },
     {
         "id": "8dde99fbf1d37fd5",
@@ -6139,6 +6238,533 @@
         "statusType": "jsonata",
         "x": 1200,
         "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "5ea21ab10b651e0d",
+        "type": "inject",
+        "z": "541e4b2a25f56a51",
+        "g": "c7a0987960efee3f",
+        "name": "",
+        "props": [
+            {
+                "p": "timestamp",
+                "v": "",
+                "vt": "date"
+            }
+        ],
+        "repeat": "",
+        "crontab": "*/15 0-23 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "b889d8ea027ab160",
+                "92f457e2c0b75d30"
+            ]
+        ]
+    },
+    {
+        "id": "92f457e2c0b75d30",
+        "type": "http request",
+        "z": "541e4b2a25f56a51",
+        "g": "c7a0987960efee3f",
+        "name": "GET free_bike_status",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://api.mobidata-bw.de/sharing/gbfs/v2/zeus_konstanz/free_bike_status",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 260,
+        "y": 240,
+        "wires": [
+            [
+                "874ee62094bc9501",
+                "10a722b62f7439b6"
+            ]
+        ]
+    },
+    {
+        "id": "874ee62094bc9501",
+        "type": "debug",
+        "z": "541e4b2a25f56a51",
+        "g": "c7a0987960efee3f",
+        "name": "free_bike_status",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 560,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "10a722b62f7439b6",
+        "type": "function",
+        "z": "541e4b2a25f56a51",
+        "g": "c7a0987960efee3f",
+        "name": "build rows",
+        "func": "let rows = []\n\nfunction point({lon, lat}) {\n    return `SRID=4326;POINT(${lon} ${lat})`\n}\n\nfor (const x of (msg.payload.data.bikes)) {\n    const oDT = new Date(x.last_reported * 1000).toISOString();\n    \n    var status = \"free\";\n    if (x.is_reserved) {\n        status += \", reserved\";\n    }\n    if (x.is_disabled) {\n        status += \", disabled\";\n    }\n\n    rows.push({\n        time: new Date(msg.timestamp).toISOString(),\n        fleetVehicleId: x.bike_id,\n        vehicleType: 'scooter',\n        location: point({ lat: x.lat, lon: x.lon }),\n        observationDateTime: oDT,\n        serviceStatus: status,\n        currentRangeMeters: x.current_range_meters, // not part of SDM\n    })\n}\n\nreturn {\n    payload : rows,\n    timestamp: msg.timestamp,\n    }",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 320,
+        "wires": [
+            [
+                "dc223cf83b756652",
+                "bad3a5ee14b9abed",
+                "27814809a4e3080e"
+            ]
+        ]
+    },
+    {
+        "id": "dc223cf83b756652",
+        "type": "debug",
+        "z": "541e4b2a25f56a51",
+        "g": "c7a0987960efee3f",
+        "name": "payload[0]",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload[0]",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "bad3a5ee14b9abed",
+        "type": "debug",
+        "z": "541e4b2a25f56a51",
+        "g": "c7a0987960efee3f",
+        "name": "# rows",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'n: ' & $count(msg.payload)",
+        "statusType": "jsonata",
+        "x": 530,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "b889d8ea027ab160",
+        "type": "debug",
+        "z": "541e4b2a25f56a51",
+        "g": "c7a0987960efee3f",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 550,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c5f1fcdf9d6f25fe",
+        "type": "comment",
+        "z": "541e4b2a25f56a51",
+        "name": "Smart Data Model: Transportation.Vehicle",
+        "info": "",
+        "x": 200,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ef9f1d98236e03c3",
+        "type": "comment",
+        "z": "541e4b2a25f56a51",
+        "name": "Zeus Leihroller Fahrzeuge aus Mobidata GBFS",
+        "info": "",
+        "x": 220,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "32215c5b0fc9d5d5",
+        "type": "function",
+        "z": "541e4b2a25f56a51",
+        "g": "efb71f06b1171c52",
+        "name": "Define Statements (CREATE TABLE, ...)",
+        "func": "msg.payload = []\nmsg.payload[0] = `\nCREATE TABLE mobidata_vehicles (\n    time timestamptz NOT NULL,\n    \"fleetVehicleId\" text NOT NULL,\n    \"vehicleType\" text NOT NULL,\n    location geometry NOT NULL,\n    \"observationDateTime\" timestamptz NOT NULL,\n    \"serviceStatus\" text NOT NULL,\n    \"currentRangeMeters\" double precision NOT NULL\n)\n`;\n\nmsg.payload[1] = `SELECT create_hypertable('mobidata_vehicles', 'time')`;\nmsg.payload[2] = `COMMENT ON TABLE mobidata_vehicles IS 'Column types follow the smart data model Transportation.Vehicle: https://github.com/smart-data-models/dataModel.Transportation/tree/master/Vehicle'`\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 880,
+        "wires": [
+            [
+                "4f7cf3b9655f1ec5"
+            ]
+        ]
+    },
+    {
+        "id": "4f7cf3b9655f1ec5",
+        "type": "split",
+        "z": "541e4b2a25f56a51",
+        "g": "efb71f06b1171c52",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 690,
+        "y": 880,
+        "wires": [
+            [
+                "73150a2014f0be11"
+            ]
+        ]
+    },
+    {
+        "id": "73150a2014f0be11",
+        "type": "function",
+        "z": "541e4b2a25f56a51",
+        "g": "efb71f06b1171c52",
+        "name": "Configure PostgREST request",
+        "func": "const postgrest = 'postgrest-service.prd-data-management-stack.svc.cluster.local:3000'\n\nmsg.method = 'POST';\nmsg.url = `${postgrest}/rpc/mgmt`;\nmsg.headers = {\n    'Content-Type': 'text/plain',\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 740,
+        "wires": [
+            [
+                "a4346a9f423f124f",
+                "3d549e073bd598bb"
+            ]
+        ]
+    },
+    {
+        "id": "a4346a9f423f124f",
+        "type": "debug",
+        "z": "541e4b2a25f56a51",
+        "g": "efb71f06b1171c52",
+        "name": "Exec Statement",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "5006b0df317b7aef",
+        "type": "inject",
+        "z": "541e4b2a25f56a51",
+        "g": "efb71f06b1171c52",
+        "name": "create",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 170,
+        "y": 880,
+        "wires": [
+            [
+                "32215c5b0fc9d5d5"
+            ]
+        ]
+    },
+    {
+        "id": "7bcfd74f356855cd",
+        "type": "function",
+        "z": "541e4b2a25f56a51",
+        "g": "5295eb8826702f2d",
+        "name": "Define Statement (DROP TABLE)",
+        "func": "msg.payload = `DROP TABLE IF EXISTS mobidata_vehicles`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 740,
+        "wires": [
+            [
+                "73150a2014f0be11"
+            ]
+        ]
+    },
+    {
+        "id": "98042903a531ade0",
+        "type": "inject",
+        "z": "541e4b2a25f56a51",
+        "g": "5295eb8826702f2d",
+        "name": "clean + recreate",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 200,
+        "y": 760,
+        "wires": [
+            [
+                "1ef0a435792ba31d",
+                "7bcfd74f356855cd"
+            ]
+        ]
+    },
+    {
+        "id": "1ef0a435792ba31d",
+        "type": "delay",
+        "z": "541e4b2a25f56a51",
+        "g": "5295eb8826702f2d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 420,
+        "y": 800,
+        "wires": [
+            [
+                "32215c5b0fc9d5d5"
+            ]
+        ]
+    },
+    {
+        "id": "3d549e073bd598bb",
+        "type": "delay",
+        "z": "541e4b2a25f56a51",
+        "g": "efb71f06b1171c52",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "200",
+        "timeoutUnits": "milliseconds",
+        "rate": "2",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 960,
+        "y": 820,
+        "wires": [
+            [
+                "c6ddd5234eff8889",
+                "e9c3753ec70a3abe"
+            ]
+        ]
+    },
+    {
+        "id": "e9c3753ec70a3abe",
+        "type": "debug",
+        "z": "541e4b2a25f56a51",
+        "g": "efb71f06b1171c52",
+        "name": "Exec Statement",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "c6ddd5234eff8889",
+        "type": "http request",
+        "z": "541e4b2a25f56a51",
+        "g": "efb71f06b1171c52",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 950,
+        "y": 880,
+        "wires": [
+            [
+                "87e46a1170e6d16c"
+            ]
+        ]
+    },
+    {
+        "id": "87e46a1170e6d16c",
+        "type": "debug",
+        "z": "541e4b2a25f56a51",
+        "g": "efb71f06b1171c52",
+        "name": "Exec Response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 1220,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "27814809a4e3080e",
+        "type": "function",
+        "z": "541e4b2a25f56a51",
+        "g": "7e108667b7b35e59",
+        "name": "Configure PostgREST request",
+        "func": "const postgrest = 'postgrest-service.prd-data-management-stack.svc.cluster.local:3000'\n\nmsg.method = 'POST';\nmsg.url = `${postgrest}/mobidata_vehicles`;\nmsg.headers = {\n    'Content-Type': 'application/json',\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 460,
+        "wires": [
+            [
+                "e59b1fc3297be6d0",
+                "68c3be2d139c8d13"
+            ]
+        ]
+    },
+    {
+        "id": "68c3be2d139c8d13",
+        "type": "debug",
+        "z": "541e4b2a25f56a51",
+        "g": "7e108667b7b35e59",
+        "name": "Payload",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "e59b1fc3297be6d0",
+        "type": "http request",
+        "z": "541e4b2a25f56a51",
+        "g": "7e108667b7b35e59",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 290,
+        "y": 540,
+        "wires": [
+            [
+                "46917c46b25aa384",
+                "1070e397dc8bbe73"
+            ]
+        ]
+    },
+    {
+        "id": "46917c46b25aa384",
+        "type": "debug",
+        "z": "541e4b2a25f56a51",
+        "g": "7e108667b7b35e59",
+        "name": "Response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 540,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "1070e397dc8bbe73",
+        "type": "debug",
+        "z": "541e4b2a25f56a51",
+        "g": "7e108667b7b35e59",
+        "name": "timestamp",
+        "active": false,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "$fromMillis(msg.timestamp)",
+        "statusType": "jsonata",
+        "x": 550,
+        "y": 580,
         "wires": []
     },
     {
