@@ -388,9 +388,9 @@
             "6d159c2b70f936e3",
             "41645733b4592f63"
         ],
-        "x": 34,
+        "x": 24,
         "y": 119,
-        "w": 858,
+        "w": 868,
         "h": 928
     },
     {
@@ -1793,8 +1793,7 @@
             [
                 "fd6432b96df1a39d",
                 "94e27317ccdf68d1",
-                "8168eb230e962337",
-                "46c2670f52912c77"
+                "8168eb230e962337"
             ]
         ]
     },
@@ -2211,85 +2210,6 @@
         "wires": []
     },
     {
-        "id": "46c2670f52912c77",
-        "type": "function",
-        "z": "e239f32639a28b7a",
-        "name": "prepare Stellio request Operator DB",
-        "func": "const stellio = \"http://stellio-stellio-context-broker-api-gateway.prd-ngsi-stack.svc.cluster.local:8080\" + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entityOperations/upsert?options=update`;\n\nmsg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 280,
-        "y": 800,
-        "wires": [
-            [
-                "2994ddcb3da4a196"
-            ]
-        ]
-    },
-    {
-        "id": "427cdb1c56be9961",
-        "type": "debug",
-        "z": "e239f32639a28b7a",
-        "name": "Stellio response",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "'status: ' & msg.statusCode",
-        "statusType": "jsonata",
-        "x": 600,
-        "y": 800,
-        "wires": []
-    },
-    {
-        "id": "2994ddcb3da4a196",
-        "type": "http request",
-        "z": "e239f32639a28b7a",
-        "name": "POST",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 430,
-        "y": 860,
-        "wires": [
-            [
-                "427cdb1c56be9961",
-                "93e08e303a9ddda4"
-            ]
-        ]
-    },
-    {
-        "id": "93e08e303a9ddda4",
-        "type": "debug",
-        "z": "e239f32639a28b7a",
-        "name": "timestamp",
-        "active": false,
-        "tosidebar": false,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "$fromMillis(msg.timestamp)",
-        "statusType": "jsonata",
-        "x": 590,
-        "y": 880,
-        "wires": []
-    },
-    {
         "id": "8493b27b820a4d1f",
         "type": "inject",
         "z": "130060434246f931",
@@ -2375,8 +2295,7 @@
             [
                 "6768d6bc5fbd4980",
                 "90c57bd708ee7dd1",
-                "99113f2bb8223169",
-                "e1b434ecf032d5fc"
+                "99113f2bb8223169"
             ]
         ]
     },
@@ -2742,85 +2661,6 @@
         "wires": []
     },
     {
-        "id": "e1b434ecf032d5fc",
-        "type": "function",
-        "z": "130060434246f931",
-        "name": "prepare Stellio request Operator DB",
-        "func": "const stellio = \"http://stellio-stellio-context-broker-api-gateway.prd-ngsi-stack.svc.cluster.local:8080\" + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entityOperations/upsert?options=update`;\n\nmsg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 260,
-        "y": 740,
-        "wires": [
-            [
-                "08d9fd0a4ece43c8"
-            ]
-        ]
-    },
-    {
-        "id": "d99d9a0d02a78c25",
-        "type": "debug",
-        "z": "130060434246f931",
-        "name": "Stellio response",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "'status: ' & msg.statusCode",
-        "statusType": "jsonata",
-        "x": 580,
-        "y": 740,
-        "wires": []
-    },
-    {
-        "id": "08d9fd0a4ece43c8",
-        "type": "http request",
-        "z": "130060434246f931",
-        "name": "POST",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 410,
-        "y": 800,
-        "wires": [
-            [
-                "d99d9a0d02a78c25",
-                "e0e30fa2751542d7"
-            ]
-        ]
-    },
-    {
-        "id": "e0e30fa2751542d7",
-        "type": "debug",
-        "z": "130060434246f931",
-        "name": "timestamp",
-        "active": false,
-        "tosidebar": false,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "$fromMillis(msg.timestamp)",
-        "statusType": "jsonata",
-        "x": 570,
-        "y": 820,
-        "wires": []
-    },
-    {
         "id": "145a9bcf92b28837",
         "type": "inject",
         "z": "279efa75137f8875",
@@ -3063,8 +2903,7 @@
             [
                 "dc8410fec5e5a624",
                 "ae3d989b9cebd5d1",
-                "9b3f87d3ae82233f",
-                "9fb5f0f27b305cef"
+                "9b3f87d3ae82233f"
             ]
         ]
     },
@@ -3484,85 +3323,6 @@
         "wires": []
     },
     {
-        "id": "9fb5f0f27b305cef",
-        "type": "function",
-        "z": "279efa75137f8875",
-        "name": "prepare Stellio request Operator DB",
-        "func": "const stellio = \"http://stellio-stellio-context-broker-api-gateway.prd-ngsi-stack.svc.cluster.local:8080\" + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entityOperations/upsert?options=update`;\n\nmsg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 220,
-        "y": 980,
-        "wires": [
-            [
-                "8e6f6a917b4f6491"
-            ]
-        ]
-    },
-    {
-        "id": "1dd206f9c2af1aec",
-        "type": "debug",
-        "z": "279efa75137f8875",
-        "name": "Stellio response",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "'status: ' & msg.statusCode",
-        "statusType": "jsonata",
-        "x": 540,
-        "y": 980,
-        "wires": []
-    },
-    {
-        "id": "8e6f6a917b4f6491",
-        "type": "http request",
-        "z": "279efa75137f8875",
-        "name": "POST",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 370,
-        "y": 1040,
-        "wires": [
-            [
-                "1dd206f9c2af1aec",
-                "f28b191a6972c563"
-            ]
-        ]
-    },
-    {
-        "id": "f28b191a6972c563",
-        "type": "debug",
-        "z": "279efa75137f8875",
-        "name": "timestamp",
-        "active": false,
-        "tosidebar": false,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "$fromMillis(msg.timestamp)",
-        "statusType": "jsonata",
-        "x": 530,
-        "y": 1060,
-        "wires": []
-    },
-    {
         "id": "f52718f897020a92",
         "type": "inject",
         "z": "50940b605fe0d135",
@@ -3825,8 +3585,7 @@
         "wires": [
             [
                 "192b12dc023bff79",
-                "77e5e0f98219cf4d",
-                "989241cb6a0e7550"
+                "77e5e0f98219cf4d"
             ]
         ]
     },
@@ -4193,8 +3952,7 @@
             [
                 "4fd2d351117d5831",
                 "9e359282cc553c91",
-                "58609bb0f309d986",
-                "f57c142e46f44772"
+                "58609bb0f309d986"
             ]
         ]
     },
@@ -4623,164 +4381,6 @@
         "statusType": "jsonata",
         "x": 1390,
         "y": 740,
-        "wires": []
-    },
-    {
-        "id": "989241cb6a0e7550",
-        "type": "function",
-        "z": "50940b605fe0d135",
-        "name": "prepare Stellio request Operator DB",
-        "func": "const stellio = \"http://stellio-stellio-context-broker-api-gateway.prd-ngsi-stack.svc.cluster.local:8080\" + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entityOperations/upsert?options=update`;\n\nmsg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 440,
-        "wires": [
-            [
-                "fef4f8bb196401aa"
-            ]
-        ]
-    },
-    {
-        "id": "cb0dd4960cc5a35f",
-        "type": "debug",
-        "z": "50940b605fe0d135",
-        "name": "Stellio response",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "'status: ' & msg.statusCode",
-        "statusType": "jsonata",
-        "x": 1160,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "fef4f8bb196401aa",
-        "type": "http request",
-        "z": "50940b605fe0d135",
-        "name": "POST",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 990,
-        "y": 500,
-        "wires": [
-            [
-                "cb0dd4960cc5a35f",
-                "3113f054fc1a77ae"
-            ]
-        ]
-    },
-    {
-        "id": "3113f054fc1a77ae",
-        "type": "debug",
-        "z": "50940b605fe0d135",
-        "name": "timestamp",
-        "active": false,
-        "tosidebar": false,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "$fromMillis(msg.timestamp)",
-        "statusType": "jsonata",
-        "x": 1150,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "f57c142e46f44772",
-        "type": "function",
-        "z": "50940b605fe0d135",
-        "name": "prepare Stellio request Operator DB",
-        "func": "const stellio = \"http://stellio-stellio-context-broker-api-gateway.prd-ngsi-stack.svc.cluster.local:8080\" + \"/ngsi-ld/v1\"\nmsg.url = `${stellio}/entityOperations/upsert?options=update`;\n\nmsg.headers = {};\nmsg.headers[\"Content-Type\"] = 'application/ld+json';\nmsg.headers[\"NGSILD-Tenant\"] = env.get('FIWARE_SERVICE');\nmsg.headers[\"Fiware-ServicePath\"] = '/';\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 1160,
-        "wires": [
-            [
-                "f9a443d9567236aa"
-            ]
-        ]
-    },
-    {
-        "id": "2077d0be394dac2a",
-        "type": "debug",
-        "z": "50940b605fe0d135",
-        "name": "Stellio response",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "'status: ' & msg.statusCode",
-        "statusType": "jsonata",
-        "x": 1160,
-        "y": 1160,
-        "wires": []
-    },
-    {
-        "id": "f9a443d9567236aa",
-        "type": "http request",
-        "z": "50940b605fe0d135",
-        "name": "POST",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 990,
-        "y": 1220,
-        "wires": [
-            [
-                "2077d0be394dac2a",
-                "5ad4f05eebd98cb4"
-            ]
-        ]
-    },
-    {
-        "id": "5ad4f05eebd98cb4",
-        "type": "debug",
-        "z": "50940b605fe0d135",
-        "name": "timestamp",
-        "active": false,
-        "tosidebar": false,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "$fromMillis(msg.timestamp)",
-        "statusType": "jsonata",
-        "x": 1150,
-        "y": 1240,
         "wires": []
     },
     {
