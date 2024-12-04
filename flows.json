@@ -1016,7 +1016,8 @@
         "wires": [
             [
                 "cf5faa6bbaccf325",
-                "2d938292931aeb9e"
+                "2d938292931aeb9e",
+                "7cfee927748434e4"
             ]
         ]
     },
@@ -1267,7 +1268,7 @@
         "z": "dfb95ed1ca05b9e7",
         "g": "9aa2cbeacb0d89aa",
         "name": "Stellio entities",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -1644,7 +1645,7 @@
         "z": "dfb95ed1ca05b9e7",
         "g": "efe3716d0229b80a",
         "name": "Stellio delete",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -1695,7 +1696,7 @@
         "z": "dfb95ed1ca05b9e7",
         "g": "efe3716d0229b80a",
         "name": "entity ids",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -1728,7 +1729,6 @@
         "y": 160,
         "wires": [
             [
-                "bde7a5a003f78d2c",
                 "3f267949c9e94932"
             ]
         ]
@@ -2230,8 +2230,7 @@
         "y": 160,
         "wires": [
             [
-                "377c6fee1f865163",
-                "dd37b8991aa7f0c3"
+                "377c6fee1f865163"
             ]
         ]
     },
@@ -2696,8 +2695,7 @@
         "y": 160,
         "wires": [
             [
-                "7acb43a82774b9ab",
-                "645a6228433248cc"
+                "7acb43a82774b9ab"
             ]
         ]
     },
@@ -3499,8 +3497,7 @@
         "y": 80,
         "wires": [
             [
-                "492ee54e54f607a7",
-                "ef380b50cc54522a"
+                "492ee54e54f607a7"
             ]
         ]
     },
@@ -3865,8 +3862,7 @@
         "y": 680,
         "wires": [
             [
-                "a4e4d8b358e5ab48",
-                "0f1dd9a3a8c0a9ac"
+                "a4e4d8b358e5ab48"
             ]
         ]
     },
