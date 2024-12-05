@@ -507,12 +507,16 @@
             "b70fda7c2d04bd57",
             "1011bc6efbacb0c7",
             "1630bf7f0a2f22d0",
-            "1d3623bc18a517d0"
+            "1d3623bc18a517d0",
+            "0d74c792572d9bf3",
+            "cb278bf10121a38b",
+            "f33fcaec808b17ea",
+            "a0882e7f27c6af6f"
         ],
         "x": 28,
-        "y": 873,
-        "w": 1298,
-        "h": 248
+        "y": 953,
+        "w": 1338,
+        "h": 368
     },
     {
         "id": "ad0f8627a27fd460",
@@ -536,12 +540,15 @@
             "ca90b60a31372939",
             "cf87d65c1c8daf4d",
             "d9195bb7bab1f2a7",
-            "978f49f12f8276c8"
+            "978f49f12f8276c8",
+            "ac4455d0c23ad258",
+            "a5d582a714269fd6",
+            "c6f3aa18a8f90999"
         ],
         "x": 34,
         "y": 119,
         "w": 692,
-        "h": 708
+        "h": 808
     },
     {
         "id": "efb71f06b1171c52",
@@ -834,7 +841,7 @@
             "f17cf164ceb9544c"
         ],
         "x": 114,
-        "y": 599,
+        "y": 699,
         "w": 532,
         "h": 202
     },
@@ -854,7 +861,7 @@
             "013fc7de7925c10e"
         ],
         "x": 54,
-        "y": 899,
+        "y": 979,
         "w": 572,
         "h": 142
     },
@@ -1739,8 +1746,8 @@
         "y": 160,
         "wires": [
             [
-                "9117a1b92c1cb693",
-                "d9195bb7bab1f2a7"
+                "d9195bb7bab1f2a7",
+                "ac4455d0c23ad258"
             ]
         ]
     },
@@ -1762,7 +1769,7 @@
         "senderr": false,
         "headers": [],
         "x": 250,
-        "y": 240,
+        "y": 340,
         "wires": [
             [
                 "77344e8dc255c475",
@@ -1785,7 +1792,7 @@
         "statusVal": "'status: ' & msg.statusCode",
         "statusType": "jsonata",
         "x": 550,
-        "y": 240,
+        "y": 340,
         "wires": []
     },
     {
@@ -1794,7 +1801,7 @@
         "z": "7254d490dc8b92ae",
         "g": "ad0f8627a27fd460",
         "name": "build payload",
-        "func": "let rows = []\n\nfunction point({lon, lat}) {\n    return `SRID=4326;POINT(${lon} ${lat})`\n}\n\nfor (const x of (msg.payload.data.stations)) {\n    const oDT = new Date(x.last_reported * 1000).toISOString();\n\n    rows.push({\n        time: new Date(msg.timestamp).toISOString(),\n        stationCode: x.station_id,\n        name: x.name,\n        alternateName: x.short_name,\n        availableBikeNumber: x.num_bikes_available,\n        location: point({lat: x.lat, lon: x.lon}),\n        freeSlotNumber: x.num_docks_available,\n        observationDateTime: oDT,\n    })\n}\n\nreturn {\n    payload : rows,\n    timestamp: msg.timestamp,\n    }",
+        "func": "let vt = {} // vehicle_types\nfor (const x of msg.vehicle_types.data.vehicle_types) {\n    const id = x.vehicle_type_id;\n    const nr = id.replace(/\\D/g, \"\");\n    vt[id] = `${nr}-${x.name}`;\n} \n\nlet rows = []\n\nfunction point({lon, lat}) {\n    return `SRID=4326;POINT(${lon} ${lat})`\n}\n\nfor (const x of (msg.payload.data.stations)) {\n    const oDT = new Date(x.last_reported * 1000).toISOString();\n\n    const availableVehicleTypes = {};\n    for (const y of x.vehicle_types_available) {\n        const id = y.vehicle_type_id;\n        if (id in vt) {\n            availableVehicleTypes[vt[id]] = y.count;\n        } else {\n            availableVehicleTypes[id] = y.count;\n        }\n    }\n\n    rows.push({\n        time: new Date(msg.timestamp).toISOString(),\n        stationCode: x.station_id,\n        name: x.name,\n        alternateName: x.short_name,\n        availableBikeNumber: x.num_bikes_available,\n        availableVehicleTypes,\n        location: point({lat: x.lat, lon: x.lon}),\n        freeSlotNumber: x.num_docks_available,\n        observationDateTime: oDT,\n    })\n}\n\nreturn {\n    payload : rows,\n    timestamp: msg.timestamp,\n    }",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1802,7 +1809,7 @@
         "finalize": "",
         "libs": [],
         "x": 210,
-        "y": 500,
+        "y": 600,
         "wires": [
             [
                 "b27cc92944ec3fd7",
@@ -1826,7 +1833,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 530,
-        "y": 480,
+        "y": 580,
         "wires": []
     },
     {
@@ -1844,7 +1851,7 @@
         "statusVal": "'n: ' & $count(msg.payload)",
         "statusType": "jsonata",
         "x": 510,
-        "y": 540,
+        "y": 640,
         "wires": []
     },
     {
@@ -1865,7 +1872,7 @@
         "senderr": false,
         "headers": [],
         "x": 230,
-        "y": 360,
+        "y": 460,
         "wires": [
             [
                 "9ac01a61a7d50897",
@@ -1888,7 +1895,7 @@
         "statusVal": "'status: ' & msg.statusCode",
         "statusType": "jsonata",
         "x": 540,
-        "y": 360,
+        "y": 460,
         "wires": []
     },
     {
@@ -1912,7 +1919,7 @@
         "to": "",
         "reg": false,
         "x": 220,
-        "y": 300,
+        "y": 400,
         "wires": [
             [
                 "8f3676de990a3a3e"
@@ -1933,7 +1940,7 @@
         "finalize": "",
         "libs": [],
         "x": 240,
-        "y": 420,
+        "y": 520,
         "wires": [
             [
                 "cf87d65c1c8daf4d",
@@ -1956,7 +1963,7 @@
         "statusVal": "'status: ' & msg.statusCode",
         "statusType": "jsonata",
         "x": 570,
-        "y": 420,
+        "y": 520,
         "wires": []
     },
     {
@@ -2011,7 +2018,7 @@
         "finalize": "",
         "libs": [],
         "x": 270,
-        "y": 640,
+        "y": 740,
         "wires": [
             [
                 "4dfe019a6018ed01",
@@ -2034,7 +2041,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 520,
-        "y": 640,
+        "y": 740,
         "wires": []
     },
     {
@@ -2055,7 +2062,7 @@
         "senderr": false,
         "headers": [],
         "x": 270,
-        "y": 720,
+        "y": 820,
         "wires": [
             [
                 "960256e4780d1904",
@@ -2078,7 +2085,7 @@
         "statusVal": "'status: ' & msg.statusCode",
         "statusType": "jsonata",
         "x": 520,
-        "y": 700,
+        "y": 800,
         "wires": []
     },
     {
@@ -2096,7 +2103,7 @@
         "statusVal": "$fromMillis(msg.timestamp)",
         "statusType": "jsonata",
         "x": 530,
-        "y": 760,
+        "y": 860,
         "wires": []
     },
     {
@@ -2113,10 +2120,11 @@
         "finalize": "",
         "libs": [],
         "x": 420,
-        "y": 1080,
+        "y": 1160,
         "wires": [
             [
-                "050c502f17aeaadc"
+                "050c502f17aeaadc",
+                "0d74c792572d9bf3"
             ]
         ]
     },
@@ -2132,8 +2140,8 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 670,
-        "y": 1080,
+        "x": 710,
+        "y": 1160,
         "wires": [
             [
                 "17bf151937c6a8f3"
@@ -2153,8 +2161,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 930,
-        "y": 940,
+        "x": 970,
+        "y": 1020,
         "wires": [
             [
                 "f22ca1b0081c2126",
@@ -2176,8 +2184,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1200,
-        "y": 940,
+        "x": 1240,
+        "y": 1020,
         "wires": []
     },
     {
@@ -2193,7 +2201,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 150,
-        "y": 1080,
+        "y": 1160,
         "wires": [
             [
                 "3ed39dfea1bcec72"
@@ -2214,7 +2222,7 @@
         "finalize": "",
         "libs": [],
         "x": 460,
-        "y": 940,
+        "y": 1020,
         "wires": [
             [
                 "17bf151937c6a8f3"
@@ -2234,7 +2242,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 180,
-        "y": 960,
+        "y": 1040,
         "wires": [
             [
                 "013fc7de7925c10e",
@@ -2261,7 +2269,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 400,
-        "y": 1000,
+        "y": 1080,
         "wires": [
             [
                 "3ed39dfea1bcec72"
@@ -2286,8 +2294,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 940,
-        "y": 1020,
+        "x": 980,
+        "y": 1100,
         "wires": [
             [
                 "1630bf7f0a2f22d0",
@@ -2309,8 +2317,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1200,
-        "y": 1020,
+        "x": 1240,
+        "y": 1100,
         "wires": []
     },
     {
@@ -2330,8 +2338,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 930,
-        "y": 1080,
+        "x": 970,
+        "y": 1160,
         "wires": [
             [
                 "1d3623bc18a517d0"
@@ -2352,8 +2360,158 @@
         "targetType": "msg",
         "statusVal": "'status: ' & msg.statusCode",
         "statusType": "jsonata",
-        "x": 1200,
-        "y": 1080,
+        "x": 1240,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "ac4455d0c23ad258",
+        "type": "http request",
+        "z": "7254d490dc8b92ae",
+        "g": "ad0f8627a27fd460",
+        "name": "GET vehicle_types",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://api.mobidata-bw.de/sharing/gbfs/v2/nextbike_kk/vehicle_types",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 230,
+        "y": 220,
+        "wires": [
+            [
+                "a5d582a714269fd6",
+                "c6f3aa18a8f90999"
+            ]
+        ]
+    },
+    {
+        "id": "a5d582a714269fd6",
+        "type": "debug",
+        "z": "7254d490dc8b92ae",
+        "g": "ad0f8627a27fd460",
+        "name": "vehicle_types",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "'status: ' & msg.statusCode",
+        "statusType": "jsonata",
+        "x": 540,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c6f3aa18a8f90999",
+        "type": "change",
+        "z": "7254d490dc8b92ae",
+        "g": "ad0f8627a27fd460",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "vehicle_types",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 250,
+        "y": 280,
+        "wires": [
+            [
+                "9117a1b92c1cb693"
+            ]
+        ]
+    },
+    {
+        "id": "0d74c792572d9bf3",
+        "type": "delay",
+        "z": "7254d490dc8b92ae",
+        "g": "dc11a833da7816df",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 340,
+        "y": 1220,
+        "wires": [
+            [
+                "f33fcaec808b17ea"
+            ]
+        ]
+    },
+    {
+        "id": "cb278bf10121a38b",
+        "type": "inject",
+        "z": "7254d490dc8b92ae",
+        "g": "dc11a833da7816df",
+        "name": "migrate",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 1280,
+        "wires": [
+            [
+                "f33fcaec808b17ea"
+            ]
+        ]
+    },
+    {
+        "id": "f33fcaec808b17ea",
+        "type": "function",
+        "z": "7254d490dc8b92ae",
+        "g": "dc11a833da7816df",
+        "name": "Define Statements (ALTER TABLE, ...)",
+        "func": "const dataspace = env.get('FIWARE_SERVICE');\n\nmsg.payload = []\nmsg.payload[0] = `\nALTER TABLE ${dataspace}_bikehiredockingstations\nADD COLUMN \"availableVehicleTypes\" JSONB NOT NULL;\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1280,
+        "wires": [
+            [
+                "050c502f17aeaadc"
+            ]
+        ]
+    },
+    {
+        "id": "a0882e7f27c6af6f",
+        "type": "comment",
+        "z": "7254d490dc8b92ae",
+        "g": "dc11a833da7816df",
+        "name": "add availableVehicleTypes",
+        "info": "",
+        "x": 730,
+        "y": 1280,
         "wires": []
     },
     {
