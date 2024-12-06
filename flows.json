@@ -388,9 +388,9 @@
             "6d159c2b70f936e3",
             "41645733b4592f63"
         ],
-        "x": 24,
+        "x": 34,
         "y": 119,
-        "w": 868,
+        "w": 858,
         "h": 928
     },
     {
@@ -563,9 +563,9 @@
             "a5d582a714269fd6",
             "c6f3aa18a8f90999"
         ],
-        "x": 24,
+        "x": 34,
         "y": 119,
-        "w": 702,
+        "w": 692,
         "h": 808
     },
     {
@@ -2508,7 +2508,7 @@
         "z": "7254d490dc8b92ae",
         "g": "dc11a833da7816df",
         "name": "Define Statements (ALTER TABLE, ...)",
-        "func": "const dataspace = env.get('FIWARE_SERVICE');\n\nmsg.payload = []\nmsg.payload[0] = `\nALTER TABLE ${dataspace}_bikehiredockingstations\nADD COLUMN \"availableVehicleTypes\" JSONB NOT NULL;\n`;\n\nreturn msg;",
+        "func": "const dataspace = env.get('FIWARE_SERVICE');\n\nmsg.payload = []\nmsg.payload[0] = `\nALTER TABLE ${dataspace}_bikehiredockingstations\nADD COLUMN \"availableVehicleTypes\" JSONB;\n`;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
