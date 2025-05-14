@@ -65,20 +65,12 @@
             "label": true
         },
         "nodes": [
-            "3ed39dfea1bcec72",
-            "17bf151937c6a8f3",
-            "f22ca1b0081c2126",
-            "e050d224a69c5f67",
-            "2a4cd8866b4b9d18",
-            "b70fda7c2d04bd57",
-            "1011bc6efbacb0c7",
-            "1630bf7f0a2f22d0",
-            "1d3623bc18a517d0"
+            "2a4cd8866b4b9d18"
         ],
         "x": 28,
         "y": 953,
-        "w": 1338,
-        "h": 248
+        "w": 209,
+        "h": 92
     },
     {
         "id": "ca5eeb628c0d6d7a",
@@ -420,15 +412,11 @@
             "fill": "#ffbfbf",
             "label": true
         },
-        "nodes": [
-            "b9553a1cdb5e15c9",
-            "58771ea04a2073e4",
-            "013fc7de7925c10e"
-        ],
+        "nodes": [],
         "x": 54,
         "y": 979,
-        "w": 572,
-        "h": 142
+        "w": 40,
+        "h": 40
     },
     {
         "id": "2425339b1ce6fd27",
@@ -848,8 +836,7 @@
             [
                 "87adf915439d2910",
                 "f3b13ac9e8569862",
-                "af880c23c2dc570c",
-                "a2b2fac07dbde4c6"
+                "af880c23c2dc570c"
             ]
         ]
     },
@@ -1450,22 +1437,6 @@
                 "50a0846944fe421e"
             ]
         ]
-    },
-    {
-        "id": "a2b2fac07dbde4c6",
-        "type": "debug",
-        "z": "1d6d7ebf99bcb4f2",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 820,
-        "y": 600,
-        "wires": []
     },
     {
         "id": "c5f6faba5ccdd314",
@@ -4739,7 +4710,7 @@
         "z": "98449b84d855a403",
         "g": "2425339b1ce6fd27",
         "name": "Define Statement (DROP Schema)",
-        "func": "const dataspace = env.get('FIWARE_SERVICE');\n\nmsg.payload = { statements: [] };\nmsg.payload.statements[0] = `DROP SCHEMA IF EXISTS postgrest_${dataspace}`;\n\nreturn msg;",
+        "func": "const dataspace = env.get('FIWARE_SERVICE');\n\nmsg.payload = { statements: [] };\nmsg.payload.statements[0] = `DROP SCHEMA IF EXISTS postgrest_${dataspace} CASCADE`;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
